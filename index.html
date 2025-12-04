@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="diseño.css">
+    <link rel="stylesheet" href="diseno.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,9 +16,13 @@
         <div class="container">
             <div class="header-content">
                 <a href="#inicio" class="logo">
-                    <div class="logo-placeholder">
-                        <i class="fas fa-heart"></i>
-                        <span>Vivir en el Amor</span>
+                    <div class="logo-design">
+                        <i class="fas fa-heart logo-heart"></i>
+                        <div class="logo-circle"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Vivir en el Amor</span>
+                        <span class="logo-subtitle">Sanación Holística</span>
                     </div>
                 </a>
                 
@@ -87,7 +91,7 @@
     <!-- Hero Section con Carrusel -->
     <section class="hero" id="inicio">
         <div class="hero-carousel">
-            <!-- Slide 1 - Pareja en sunset -->
+            <!-- Slide 1 - Pareja feliz en montañas al atardecer -->
             <div class="carousel-slide active">
                 <div class="slide-content">
                     <div class="container">
@@ -107,11 +111,11 @@
                     </div>
                 </div>
                 <div class="slide-overlay"></div>
-                <!-- Foto 1: Pareja en sunset -->
-                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')"></div>
+                <!-- Foto 1: Pareja feliz en montañas al atardecer -->
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
             </div>
             
-            <!-- Slide 2 - Pareja en la playa -->
+            <!-- Slide 2 - Pareja caminando por campo de flores -->
             <div class="carousel-slide">
                 <div class="slide-content">
                     <div class="container">
@@ -131,11 +135,11 @@
                     </div>
                 </div>
                 <div class="slide-overlay"></div>
-                <!-- Foto 2: Pareja en la playa -->
-                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')"></div>
+                <!-- Foto 2: Pareja caminando por campo de flores -->
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
             </div>
             
-            <!-- Slide 3 - Pareja abrazada -->
+            <!-- Slide 3 - Pareja en la playa al atardecer -->
             <div class="carousel-slide">
                 <div class="slide-content">
                     <div class="container">
@@ -155,24 +159,18 @@
                     </div>
                 </div>
                 <div class="slide-overlay"></div>
-                <!-- Foto 3: Pareja abrazada -->
-                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1529254479751-fbacb4c7a587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80')"></div>
+                <!-- Foto 3: Pareja en la playa al atardecer -->
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
             </div>
         </div>
         
         <!-- Controles del carrusel -->
         <div class="carousel-controls">
-            <button class="carousel-prev" aria-label="Slide anterior">
-                <i class="fas fa-chevron-left"></i>
-            </button>
             <div class="carousel-dots">
                 <span class="dot active" data-slide="0"></span>
                 <span class="dot" data-slide="1"></span>
                 <span class="dot" data-slide="2"></span>
             </div>
-            <button class="carousel-next" aria-label="Slide siguiente">
-                <i class="fas fa-chevron-right"></i>
-            </button>
         </div>
         
         <!-- Scroll indicator -->
@@ -190,45 +188,6 @@
             <div class="heart"><i class="fas fa-heart"></i></div>
             <div class="heart"><i class="fas fa-heart"></i></div>
             <div class="heart"><i class="fas fa-heart"></i></div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-heart-circle"></i>
-                    </div>
-                    <div class="stat-number" data-count="500">0</div>
-                    <div class="stat-label" data-i18n="stat1">Personas transformadas</div>
-                </div>
-                
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="stat-number" data-count="20">0</div>
-                    <div class="stat-label" data-i18n="stat2">Años de experiencia</div>
-                </div>
-                
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <div class="stat-number" data-count="12">0</div>
-                    <div class="stat-label" data-i18n="stat3">Países alcanzados</div>
-                </div>
-                
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="stat-number" data-count="98">0</div>
-                    <div class="stat-label" data-i18n="stat4">Satisfacción</div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -309,7 +268,7 @@
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
                         <div class="service-overlay"></div>
                         <div class="service-icon">
                             <i class="fas fa-heart-circle"></i>
@@ -355,7 +314,7 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-frame">
-                        <div class="image-main" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')"></div>
+                        <div class="image-main" style="background-image: url('foto sra michelle.jpg')"></div>
                         <div class="experience-badge">
                             <span class="years">20+</span>
                             <span data-i18n="experienceYears">años de experiencia</span>
@@ -407,12 +366,14 @@
                 <p class="section-subtitle" data-i18n="testimonialsSubtitle">Lo que dicen quienes han recorrido este camino</p>
             </div>
             
-            <div class="testimonials-container">
+            <div class="testimonials-carousel">
                 <div class="testimonials-track">
                     <!-- Testimonio 1 -->
-                    <div class="testimonial-card active">
+                    <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                            </div>
                             <p data-i18n="testimonial1Text">"Después de años en relaciones tóxicas, finalmente encontré el camino hacia el amor sano. Michelle me guió con paciencia y sabiduría."</p>
                         </div>
                         <div class="testimonial-author">
@@ -422,6 +383,13 @@
                             <div class="author-info">
                                 <h4 data-i18n="testimonial1Name">Ana G.</h4>
                                 <p data-i18n="testimonial1Role">Terapia individual</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,7 +397,9 @@
                     <!-- Testimonio 2 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                            </div>
                             <p data-i18n="testimonial2Text">"Nuestra relación estaba al borde del colapso. Gracias a la terapia de pareja, hoy estamos más unidos y felices que nunca."</p>
                         </div>
                         <div class="testimonial-author">
@@ -439,6 +409,13 @@
                             <div class="author-info">
                                 <h4 data-i18n="testimonial2Name">Laura y Miguel</h4>
                                 <p data-i18n="testimonial2Role">Terapia de pareja</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -446,7 +423,9 @@
                     <!-- Testimonio 3 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                            </div>
                             <p data-i18n="testimonial3Text">"El curso online me dio las herramientas para sanar mi autoestima. Hoy me siento completa y lista para el amor verdadero."</p>
                         </div>
                         <div class="testimonial-author">
@@ -456,6 +435,13 @@
                             <div class="author-info">
                                 <h4 data-i18n="testimonial3Name">María S.</h4>
                                 <p data-i18n="testimonial3Role">Curso online</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -463,7 +449,9 @@
                     <!-- Testimonio 4 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                            </div>
                             <p data-i18n="testimonial4Text">"Aprendí a poner límites saludables y a valorarme. Ahora tengo una relación donde me siento respetada y amada profundamente."</p>
                         </div>
                         <div class="testimonial-author">
@@ -473,6 +461,13 @@
                             <div class="author-info">
                                 <h4 data-i18n="testimonial4Name">Carolina R.</h4>
                                 <p data-i18n="testimonial4Role">Coaching individual</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -480,7 +475,9 @@
                     <!-- Testimonio 5 -->
                     <div class="testimonial-card">
                         <div class="testimonial-content">
-                            <i class="fas fa-quote-left quote-icon"></i>
+                            <div class="quote-icon-wrapper">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                            </div>
                             <p data-i18n="testimonial5Text">"El proceso de sanación fue transformador. Hoy veo la vida con otros ojos y atraigo relaciones mucho más saludables."</p>
                         </div>
                         <div class="testimonial-author">
@@ -490,18 +487,33 @@
                             <div class="author-info">
                                 <h4 data-i18n="testimonial5Name">Sofía M.</h4>
                                 <p data-i18n="testimonial5Role">Terapia energética</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Dots para navegación -->
-                <div class="testimonials-dots">
-                    <span class="testimonial-dot active" data-testimonial="0"></span>
-                    <span class="testimonial-dot" data-testimonial="1"></span>
-                    <span class="testimonial-dot" data-testimonial="2"></span>
-                    <span class="testimonial-dot" data-testimonial="3"></span>
-                    <span class="testimonial-dot" data-testimonial="4"></span>
+                <!-- Controles del carrusel -->
+                <div class="testimonials-controls">
+                    <button class="testimonials-prev" aria-label="Testimonio anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots">
+                        <span class="testimonial-dot active" data-testimonial="0"></span>
+                        <span class="testimonial-dot" data-testimonial="1"></span>
+                        <span class="testimonial-dot" data-testimonial="2"></span>
+                        <span class="testimonial-dot" data-testimonial="3"></span>
+                        <span class="testimonial-dot" data-testimonial="4"></span>
+                    </div>
+                    <button class="testimonials-next" aria-label="Testimonio siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -586,9 +598,13 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#inicio" class="logo">
-                        <div class="logo-placeholder">
-                            <i class="fas fa-heart"></i>
-                            <span>Vivir en el Amor</span>
+                        <div class="logo-design">
+                            <i class="fas fa-heart logo-heart"></i>
+                            <div class="logo-circle"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Vivir en el Amor</span>
+                            <span class="logo-subtitle">Sanación Holística</span>
                         </div>
                     </a>
                     <p class="footer-tagline" data-i18n="footerTagline">Sanando corazones, transformando relaciones</p>

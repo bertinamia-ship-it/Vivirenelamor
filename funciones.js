@@ -15,6 +15,12 @@ const translations = {
         // Hero section
         heroTitle: "Vive feliz en una relación estable y exitosa en la que te sientas amada, deseada y valorada",
         heroSubtitle: "Transforma tu vida amorosa desde la raíz con nuestro método holístico de sanación emocional",
+        heroSubtitle2: "Descubre el amor consciente que nutre tu alma y te hace crecer cada día",
+        heroSubtitle3: "Crea conexiones profundas y duraderas desde el amor propio y el respeto mutuo",
+        heroSubtitle4: "Encuentra la paz interior y el equilibrio emocional que te mereces",
+        heroSubtitle5: "Transforma tus relaciones y descubre el verdadero significado del amor",
+        heroSubtitle6: "Vive cada momento con plenitud y alegría junto a quien amas",
+        heroSubtitle7: "Construye un futuro lleno de amor, comprensión y felicidad compartida",
         heroCta: "Comienza tu transformación",
         heroCtaSecondary: "Ver servicios",
         scrollText: "Descubre más",
@@ -135,6 +141,12 @@ const translations = {
         // Hero section
         heroTitle: "Live happily in a stable and successful relationship where you feel loved, desired and valued",
         heroSubtitle: "Transform your love life from the root with our holistic emotional healing method",
+        heroSubtitle2: "Discover the conscious love that nourishes your soul and helps you grow every day",
+        heroSubtitle3: "Create deep and lasting connections from self-love and mutual respect",
+        heroSubtitle4: "Find the inner peace and emotional balance you deserve",
+        heroSubtitle5: "Transform your relationships and discover the true meaning of love",
+        heroSubtitle6: "Live every moment with fullness and joy with the one you love",
+        heroSubtitle7: "Build a future full of love, understanding and shared happiness",
         heroCta: "Start your transformation",
         heroCtaSecondary: "View services",
         scrollText: "Discover more",
@@ -252,8 +264,6 @@ class HeroCarousel {
     constructor() {
         this.slides = document.querySelectorAll('.hero-carousel .carousel-slide');
         this.dots = document.querySelectorAll('.hero-carousel .dot');
-        this.prevBtn = document.querySelector('.carousel-prev');
-        this.nextBtn = document.querySelector('.carousel-next');
         this.currentSlide = 0;
         this.slideInterval = null;
         this.slideDuration = 3000; // 3 segundos
@@ -262,27 +272,29 @@ class HeroCarousel {
     }
     
     init() {
+        // Asegurar que la primera imagen esté visible
+        if (this.slides.length > 0) {
+            this.slides[0].classList.add('active');
+            if (this.dots.length > 0) {
+                this.dots[0].classList.add('active');
+            }
+        }
+        
         // Iniciar carrusel automático
         this.startAutoSlide();
         
-        // Configurar controles
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        // Configurar dots
+        // Configurar dots (solo para indicación visual)
         this.dots.forEach((dot, index) => {
             dot.addEventListener('click', () => this.goToSlide(index));
         });
         
-        // Pausar carrusel al pasar el mouse
-        const carousel = document.querySelector('.hero-carousel');
-        carousel.addEventListener('mouseenter', () => this.pauseAutoSlide());
-        carousel.addEventListener('mouseleave', () => this.startAutoSlide());
-        
-        console.log('Carrusel Hero inicializado con', this.slides.length, 'fotos');
+        console.log('Carrusel Hero inicializado con', this.slides.length, 'fotos - Auto-rotación cada 3 segundos');
     }
     
     startAutoSlide() {
+        if (this.slideInterval) {
+            clearInterval(this.slideInterval);
+        }
         this.slideInterval = setInterval(() => {
             this.nextSlide();
         }, this.slideDuration);
@@ -300,28 +312,23 @@ class HeroCarousel {
         this.goToSlide(nextSlide);
     }
     
-    prevSlide() {
-        const prevSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-        this.goToSlide(prevSlide);
-    }
-    
     goToSlide(index) {
         // Ocultar slide actual
         this.slides[this.currentSlide].classList.remove('active');
-        this.dots[this.currentSlide].classList.remove('active');
+        if (this.dots[this.currentSlide]) {
+            this.dots[this.currentSlide].classList.remove('active');
+        }
         
         // Mostrar nuevo slide
         this.currentSlide = index;
         this.slides[this.currentSlide].classList.add('active');
-        this.dots[this.currentSlide].classList.add('active');
-        
-        // Reiniciar auto slide
-        this.pauseAutoSlide();
-        this.startAutoSlide();
+        if (this.dots[this.currentSlide]) {
+            this.dots[this.currentSlide].classList.add('active');
+        }
     }
 }
 
-// Sistema de Carrusel de Testimonios FUNCIONAL
+// Sistema de Carrusel de Testimonios MEJORADO - Cambia cada 3 segundos
 class TestimonialsCarousel {
     constructor() {
         this.track = document.querySelector('.testimonials-track');
@@ -329,83 +336,73 @@ class TestimonialsCarousel {
         this.dots = document.querySelectorAll('.testimonial-dot');
         this.prevBtn = document.querySelector('.testimonials-prev');
         this.nextBtn = document.querySelector('.testimonials-next');
-        this.currentSlide = 0;
-        this.totalSlides = this.cards.length;
+        this.currentIndex = 0;
+        this.totalCards = this.cards.length;
         this.slideInterval = null;
         this.slideDuration = 3000; // 3 segundos
-        this.cardWidth = 0;
-        this.cardsPerView = 3; // Desktop: 3 tarjetas
+        this.cardsPerView = 1; // Mostrar 1 testimonio a la vez para mejor visualización
         
         this.init();
     }
     
     init() {
-        // Calcular cards por view
-        this.updateCardsPerView();
+        if (this.cards.length === 0) {
+            console.warn('No hay testimonios disponibles');
+            return;
+        }
         
-        // Inicializar posición
-        this.updateTrackPosition();
+        // Ocultar todas las tarjetas excepto la primera
+        this.cards.forEach((card, index) => {
+            if (index === 0) {
+                card.classList.add('active');
+                card.style.display = 'block';
+            } else {
+                card.classList.remove('active');
+                card.style.display = 'none';
+            }
+        });
         
         // Iniciar carrusel automático
         this.startAutoSlide();
         
         // Configurar controles
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => {
+                this.pauseAutoSlide();
+                this.prevSlide();
+                this.startAutoSlide();
+            });
+        }
+        
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => {
+                this.pauseAutoSlide();
+                this.nextSlide();
+                this.startAutoSlide();
+            });
+        }
         
         // Configurar dots
         this.dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => this.goToSlide(index));
-        });
-        
-        // Actualizar en resize
-        window.addEventListener('resize', () => {
-            this.updateCardsPerView();
-            this.updateTrackPosition();
+            dot.addEventListener('click', () => {
+                this.pauseAutoSlide();
+                this.goToSlide(index);
+                this.startAutoSlide();
+            });
         });
         
         // Pausar carrusel al pasar el mouse
         const carousel = document.querySelector('.testimonials-carousel');
-        carousel.addEventListener('mouseenter', () => this.pauseAutoSlide());
-        carousel.addEventListener('mouseleave', () => this.startAutoSlide());
-        
-        // Agregar clase active a las tarjetas visibles
-        this.updateActiveCards();
-        
-        console.log('Carrusel Testimonios inicializado con', this.totalSlides, 'testimonios');
-    }
-    
-    updateCardsPerView() {
-        // Calcular cuántas tarjetas mostrar según el ancho de pantalla
-        if (window.innerWidth >= 1200) {
-            this.cardsPerView = 3; // Desktop
-        } else if (window.innerWidth >= 768) {
-            this.cardsPerView = 2; // Tablet
-        } else {
-            this.cardsPerView = 1; // Mobile
+        if (carousel) {
+            carousel.addEventListener('mouseenter', () => this.pauseAutoSlide());
+            carousel.addEventListener('mouseleave', () => this.startAutoSlide());
         }
         
-        // Calcular ancho de cada tarjeta
-        this.cardWidth = 100 / this.cardsPerView;
-    }
-    
-    updateTrackPosition() {
-        const offset = -(this.currentSlide * this.cardWidth);
-        this.track.style.transform = `translateX(${offset}%)`;
-    }
-    
-    updateActiveCards() {
-        // Remover clase active de todas las tarjetas
-        this.cards.forEach(card => card.classList.remove('active'));
-        
-        // Agregar clase active a las tarjetas visibles
-        for (let i = 0; i < this.cardsPerView; i++) {
-            const index = (this.currentSlide + i) % this.totalSlides;
-            this.cards[index].classList.add('active');
-        }
+        console.log('Carrusel Testimonios inicializado con', this.totalCards, 'testimonios');
     }
     
     startAutoSlide() {
+        this.pauseAutoSlide(); // Limpiar intervalo previo
         this.slideInterval = setInterval(() => {
             this.nextSlide();
         }, this.slideDuration);
@@ -419,47 +416,41 @@ class TestimonialsCarousel {
     }
     
     nextSlide() {
-        // Calcular el siguiente slide
-        let nextSlide = this.currentSlide + 1;
-        
-        // Si estamos en el último grupo de tarjetas, volver al inicio
-        if (nextSlide > this.totalSlides - this.cardsPerView) {
-            nextSlide = 0;
-        }
-        
-        this.goToSlide(nextSlide);
+        const nextIndex = (this.currentIndex + 1) % this.totalCards;
+        this.goToSlide(nextIndex);
     }
     
     prevSlide() {
-        // Calcular el slide anterior
-        let prevSlide = this.currentSlide - 1;
-        
-        // Si estamos en el primer slide, ir al último grupo
-        if (prevSlide < 0) {
-            prevSlide = this.totalSlides - this.cardsPerView;
-        }
-        
-        this.goToSlide(prevSlide);
+        const prevIndex = (this.currentIndex - 1 + this.totalCards) % this.totalCards;
+        this.goToSlide(prevIndex);
     }
     
     goToSlide(index) {
+        // Ocultar tarjeta actual con animación
+        this.cards[this.currentIndex].classList.remove('active');
+        this.cards[this.currentIndex].style.opacity = '0';
+        
+        setTimeout(() => {
+            this.cards[this.currentIndex].style.display = 'none';
+            
+            // Mostrar nueva tarjeta con animación
+            this.currentIndex = index;
+            this.cards[this.currentIndex].style.display = 'block';
+            
+            setTimeout(() => {
+                this.cards[this.currentIndex].style.opacity = '1';
+                this.cards[this.currentIndex].classList.add('active');
+            }, 50);
+        }, 300);
+        
         // Actualizar dots
-        this.dots.forEach(dot => dot.classList.remove('active'));
-        const dotIndex = Math.floor(index / this.cardsPerView);
-        this.dots[dotIndex].classList.add('active');
-        
-        // Actualizar slide actual
-        this.currentSlide = index;
-        
-        // Actualizar posición del track
-        this.updateTrackPosition();
-        
-        // Actualizar tarjetas activas
-        this.updateActiveCards();
-        
-        // Reiniciar auto slide
-        this.pauseAutoSlide();
-        this.startAutoSlide();
+        this.dots.forEach((dot, i) => {
+            if (i === index) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
     }
 }
 
@@ -722,4 +713,95 @@ window.addEventListener('load', () => {
     console.log('Carrusel Hero:', heroCarousel ? 'Funcionando' : 'No inicializado');
     console.log('Carrusel Testimonios:', testimonialsCarousel ? 'Funcionando' : 'No inicializado');
     console.log('Idioma actual:', currentLanguage);
+});
+// ===== ANIMACIONES DE SCROLL Y NAVBAR =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Efecto de scroll para el header
+    const header = document.querySelector('.header');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+    // Animación de secciones al hacer scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    
+    // Agregar clase de animación a las secciones
+    const sections = document.querySelectorAll('.benefits, .services, .about, .testimonials, .contact');
+    sections.forEach(section => {
+        section.classList.add('section-animate');
+        sectionObserver.observe(section);
+    });
+    
+    // Agregar animación a las cards
+    const cards = document.querySelectorAll('.benefit-card, .service-card');
+    cards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.classList.add('fade-in');
+    });
+    
+    // Navegación activa según scroll
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+    
+    // Smooth scroll para los enlaces del menú
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    const navMobile = document.getElementById('navMobile');
+                    const hamburger = document.getElementById('hamburger');
+                    if (navMobile.classList.contains('active')) {
+                        navMobile.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                }
+            }
+        });
+    });
+    
+    console.log('Animaciones de scroll y navbar activadas');
 });
