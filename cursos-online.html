@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas Online | Vivir en el Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="diseno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-design">
+                        <i class="fas fa-heart logo-heart"></i>
+                        <div class="logo-circle"></div>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Vivir en el Amor</span>
+                        <span class="logo-subtitle">Sanación Holística</span>
+                    </div>
+                </a>
+                
+                <!-- Menú Desktop -->
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#beneficios">Beneficios</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="cursos-online.html" class="active">Cursos Online</a></li>
+                        <li><a href="index.html#testimonios">Testimonios</a></li>
+                        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Selector de idioma -->
+                <div class="language-switcher">
+                    <button class="lang-btn active-lang" data-lang="es">
+                        <span>ES</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span>EN</span>
+                    </button>
+                </div>
+                
+                <!-- Botón hamburguesa móvil -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Menú móvil -->
+            <nav class="nav-mobile" id="navMobile">
+                <ul>
+                    <li><a href="index.html#inicio" class="nav-link-mobile">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a></li>
+                    <li><a href="index.html#beneficios" class="nav-link-mobile">
+                        <i class="fas fa-star"></i>
+                        <span>Beneficios</span>
+                    </a></li>
+                    <li><a href="index.html#servicios" class="nav-link-mobile">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Servicios</span>
+                    </a></li>
+                    <li><a href="cursos-online.html" class="nav-link-mobile">
+                        <i class="fas fa-laptop"></i>
+                        <span>Cursos Online</span>
+                    </a></li>
+                    <li><a href="index.html#testimonios" class="nav-link-mobile">
+                        <i class="fas fa-comment"></i>
+                        <span>Testimonios</span>
+                    </a></li>
+                    <li><a href="index.html#sobre-mi" class="nav-link-mobile">
+                        <i class="fas fa-user"></i>
+                        <span>Sobre mí</span>
+                    </a></li>
+                    <li><a href="index.html#contacto" class="nav-link-mobile">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero de Cursos -->
+    <section class="course-detail-hero" style="background: linear-gradient(135deg, #ff6384 0%, #2d2d2d 100%);">
+        <div class="course-hero-overlay" style="background: rgba(255, 99, 132, 0.1);"></div>
+        <div class="container">
+            <div class="course-hero-content" style="text-align: center; max-width: 100%;">
+                <h1>Programas Online de Transformación</h1>
+                <p class="course-hero-subtitle">Transforma tu vida amorosa desde donde estés con nuestros programas especializados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Online Section -->
+    <section class="online-courses" style="padding: 6rem 0; background: #f9f9f9;">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- Curso 1: Sanación del Abandono -->
+                <div class="course-card" data-course="abandono">
+                    <div class="course-badge">Popular</div>
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="course-overlay"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Sanación de la Herida del Abandono</h3>
+                        <p class="course-description">Libérate del miedo al abandono y construye relaciones seguras y estables.</p>
+                        <div class="course-features">
+                            <div class="course-feature">
+                                <i class="fas fa-video"></i>
+                                <span>8 módulos en video</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>6 semanas</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificado</span>
+                            </div>
+                        </div>
+                        <a href="curso-abandono.html" class="btn btn-primary btn-course">Lo quiero</a>
+                    </div>
+                </div>
+
+                <!-- Curso 2: Amor Consciente -->
+                <div class="course-card" data-course="amor-consciente">
+                    <div class="course-badge destacado">Destacado</div>
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="course-overlay"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Amor Consciente y Relaciones Sanas</h3>
+                        <p class="course-description">Aprende a crear y mantener relaciones basadas en el amor verdadero y consciente.</p>
+                        <div class="course-features">
+                            <div class="course-feature">
+                                <i class="fas fa-video"></i>
+                                <span>10 módulos</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>8 semanas</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-users"></i>
+                                <span>Comunidad privada</span>
+                            </div>
+                        </div>
+                        <a href="curso-amor-consciente.html" class="btn btn-primary btn-course">Lo quiero</a>
+                    </div>
+                </div>
+
+                <!-- Curso 3: Autoestima y Amor Propio -->
+                <div class="course-card" data-course="autoestima">
+                    <div class="course-badge nuevo">Nuevo</div>
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="course-overlay"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Autoestima y Amor Propio</h3>
+                        <p class="course-description">Fortalece tu amor propio y construye la base para relaciones saludables.</p>
+                        <div class="course-features">
+                            <div class="course-feature">
+                                <i class="fas fa-video"></i>
+                                <span>6 módulos</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>4 semanas</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Workbook incluido</span>
+                            </div>
+                        </div>
+                        <a href="curso-autoestima.html" class="btn btn-primary btn-course">Lo quiero</a>
+                    </div>
+                </div>
+
+                <!-- Curso 4: Comunicación en Pareja -->
+                <div class="course-card" data-course="comunicacion">
+                    <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')">
+                        <div class="course-overlay"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Comunicación Efectiva en Pareja</h3>
+                        <p class="course-description">Domina las técnicas de comunicación que fortalecen la conexión en pareja.</p>
+                        <div class="course-features">
+                            <div class="course-feature">
+                                <i class="fas fa-video"></i>
+                                <span>7 módulos</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-clock"></i>
+                                <span>5 semanas</span>
+                            </div>
+                            <div class="course-feature">
+                                <i class="fas fa-headset"></i>
+                                <span>Soporte directo</span>
+                            </div>
+                        </div>
+                        <a href="curso-comunicacion.html" class="btn btn-primary btn-course">Lo quiero</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Final -->
+            <div class="section-cta" style="text-align: center; margin-top: 4rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #2d2d2d;">¿No sabes cuál elegir?</h3>
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Agenda una sesión gratuita y te ayudaré a encontrar el programa perfecto para ti</p>
+                <a href="index.html#contacto" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+                    <span>Agendar sesión gratuita</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-design">
+                            <i class="fas fa-heart logo-heart"></i>
+                            <div class="logo-circle"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Vivir en el Amor</span>
+                            <span class="logo-subtitle">Sanación Holística</span>
+                        </div>
+                    </a>
+                    <p class="footer-tagline">Sanando corazones, transformando relaciones</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hola@vivirenelamor.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+34 123 456 789</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Redes Sociales - Sección completa ancho -->
+            <div class="footer-social-full">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Vivir en el Amor. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

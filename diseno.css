@@ -2425,3 +2425,1503 @@ section {
     animation: border-glow 2s ease-in-out infinite;
 }
 
+
+/* ===== MEJORAS ÁREA DE CONTACTO Y REDES SOCIALES ===== */
+
+/* Mejorar la sección de contacto completa */
+.contact {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.05) 0%, rgba(255, 143, 163, 0.05) 100%);
+    z-index: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mejorar íconos de info */
+.info-icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6384 0%, #ff8fa3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: pulse-soft 3s ease-in-out infinite;
+}
+
+.info-item:hover .info-icon {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 0 15px 40px rgba(255, 99, 132, 0.4);
+}
+
+.info-icon i {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover .info-icon i {
+    transform: scale(1.1);
+}
+
+/* REDES SOCIALES - Diseño profesional y animado */
+.footer-social {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-social h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d2d2d;
+    text-align: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Instagram - Gradiente oficial */
+.social-icon[aria-label="Instagram"] {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+/* Facebook - Color oficial */
+.social-icon[aria-label="Facebook"] {
+    background: linear-gradient(135deg, #1877f2 0%, #0c63d4 100%);
+}
+
+/* YouTube - Color oficial */
+.social-icon[aria-label="YouTube"] {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+}
+
+/* LinkedIn - Color oficial */
+.social-icon[aria-label="LinkedIn"] {
+    background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+}
+
+.social-icon i {
+    color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Efecto de onda al hover */
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.social-icon:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+/* Animación de brillo */
+.social-icon::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.social-icon:hover::after {
+    opacity: 1;
+    left: 100%;
+}
+
+/* Efecto hover general */
+.social-icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Animación de entrada escalonada */
+@keyframes socialFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.social-icon:nth-child(1) {
+    animation: socialFadeIn 0.6s ease-out 0.1s both;
+}
+
+.social-icon:nth-child(2) {
+    animation: socialFadeIn 0.6s ease-out 0.2s both;
+}
+
+.social-icon:nth-child(3) {
+    animation: socialFadeIn 0.6s ease-out 0.3s both;
+}
+
+.social-icon:nth-child(4) {
+    animation: socialFadeIn 0.6s ease-out 0.4s both;
+}
+
+/* Efecto de pulso suave continuo */
+@keyframes socialPulse {
+    0%, 100% {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.social-icon {
+    animation: socialPulse 3s ease-in-out infinite;
+}
+
+/* Pausar el pulso al hacer hover */
+.social-icon:hover {
+    animation: none;
+}
+
+/* Mejorar el formulario de contacto */
+.contact-form {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h3 {
+    color: #ff6384;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Mejorar inputs del formulario */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff6384;
+    box-shadow: 0 0 0 3px rgba(255, 99, 132, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Botón de envío mejorado */
+.btn-block {
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-block::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-block:hover::before {
+    width: 400px;
+    height: 400px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .info-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .info-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ===== REDES SOCIALES MÁS GRANDES Y SUPER ANIMADAS ===== */
+
+/* Sobreescribir tamaños - Hacerlos MÁS GRANDES */
+.social-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly !important;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+.social-icon {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 2rem !important;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow: visible;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* Animación de rebote continuo */
+@keyframes bounce-gentle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.social-icon:nth-child(1) {
+    animation: bounce-gentle 2s ease-in-out infinite, socialFadeIn 0.6s ease-out 0.1s both;
+}
+
+.social-icon:nth-child(2) {
+    animation: bounce-gentle 2s ease-in-out 0.2s infinite, socialFadeIn 0.6s ease-out 0.2s both;
+}
+
+.social-icon:nth-child(3) {
+    animation: bounce-gentle 2s ease-in-out 0.4s infinite, socialFadeIn 0.6s ease-out 0.3s both;
+}
+
+.social-icon:nth-child(4) {
+    animation: bounce-gentle 2s ease-in-out 0.6s infinite, socialFadeIn 0.6s ease-out 0.4s both;
+}
+
+/* Efecto de resplandor animado */
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15),
+                    0 0 0 0 rgba(255, 99, 132, 0);
+    }
+    50% {
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25),
+                    0 0 20px 5px rgba(255, 99, 132, 0.3);
+    }
+}
+
+.social-icon[aria-label="Instagram"] {
+    animation: bounce-gentle 2s ease-in-out infinite,
+               glow-pulse 3s ease-in-out infinite,
+               socialFadeIn 0.6s ease-out 0.1s both;
+}
+
+.social-icon[aria-label="Facebook"] {
+    animation: bounce-gentle 2s ease-in-out 0.2s infinite,
+               glow-pulse 3s ease-in-out 0.3s infinite,
+               socialFadeIn 0.6s ease-out 0.2s both;
+}
+
+.social-icon[aria-label="YouTube"] {
+    animation: bounce-gentle 2s ease-in-out 0.4s infinite,
+               glow-pulse 3s ease-in-out 0.6s infinite,
+               socialFadeIn 0.6s ease-out 0.3s both;
+}
+
+.social-icon[aria-label="LinkedIn"] {
+    animation: bounce-gentle 2s ease-in-out 0.6s infinite,
+               glow-pulse 3s ease-in-out 0.9s infinite,
+               socialFadeIn 0.6s ease-out 0.4s both;
+}
+
+/* Hover - Crecer MUCHO más */
+.social-icon:hover {
+    transform: translateY(-15px) scale(1.25) rotate(5deg) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+    animation: none !important;
+}
+
+/* Ícono más grande en hover */
+.social-icon:hover i {
+    transform: scale(1.3) rotate(-5deg) !important;
+}
+
+/* Anillo de pulso externo */
+@keyframes ring-expand {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.social-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 3px solid currentColor;
+    animation: ring-expand 2s ease-out infinite;
+    pointer-events: none;
+}
+
+.social-icon[aria-label="Instagram"]::after {
+    border-color: #e6683c;
+}
+
+.social-icon[aria-label="Facebook"]::after {
+    border-color: #1877f2;
+}
+
+.social-icon[aria-label="YouTube"]::after {
+    border-color: #ff0000;
+}
+
+.social-icon[aria-label="LinkedIn"]::after {
+    border-color: #0077b5;
+}
+
+/* Partículas brillantes */
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+.social-icon:hover::after {
+    animation: sparkle 0.8s ease-in-out;
+}
+
+/* Título mejorado */
+.footer-social h4 {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: #ff6384;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center !important;
+    position: relative;
+    display: block !important;
+    width: 100%;
+}
+
+.footer-social h4::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6384, #ff8fa3);
+    border-radius: 2px;
+}
+
+/* Responsive - Mantener tamaño en móvil */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 70px !important;
+        height: 70px !important;
+        font-size: 1.8rem !important;
+    }
+    
+    .social-icons {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        width: 65px !important;
+        height: 65px !important;
+        font-size: 1.6rem !important;
+    }
+}
+
+
+/* ===== REDES SOCIALES EXTRA GRANDES Y MUY LLAMATIVAS ===== */
+
+/* Hacer los íconos MUCHO MÁS GRANDES - CUADRADOS */
+.social-icon {
+    width: 110px !important;
+    height: 110px !important;
+    font-size: 2.8rem !important;
+    border-radius: 25px !important;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Aumentar el gap entre íconos */
+.social-icons {
+    gap: 2.5rem !important;
+    padding: 1.5rem 0 !important;
+    justify-content: space-evenly !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+/* Rebote más pronunciado */
+@keyframes bounce-big {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) scale(1.05);
+    }
+}
+
+/* Aplicar rebote más grande */
+.social-icon:nth-child(1) {
+    animation: bounce-big 2s ease-in-out infinite,
+               glow-pulse 3s ease-in-out infinite,
+               socialFadeIn 0.6s ease-out 0.1s both !important;
+}
+
+.social-icon:nth-child(2) {
+    animation: bounce-big 2s ease-in-out 0.3s infinite,
+               glow-pulse 3s ease-in-out 0.3s infinite,
+               socialFadeIn 0.6s ease-out 0.2s both !important;
+}
+
+.social-icon:nth-child(3) {
+    animation: bounce-big 2s ease-in-out 0.6s infinite,
+               glow-pulse 3s ease-in-out 0.6s infinite,
+               socialFadeIn 0.6s ease-out 0.3s both !important;
+}
+
+.social-icon:nth-child(4) {
+    animation: bounce-big 2s ease-in-out 0.9s infinite,
+               glow-pulse 3s ease-in-out 0.9s infinite,
+               socialFadeIn 0.6s ease-out 0.4s both !important;
+}
+
+/* Resplandor más intenso */
+@keyframes glow-intense {
+    0%, 100% {
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2),
+                    0 0 0 0 rgba(255, 99, 132, 0);
+    }
+    50% {
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3),
+                    0 0 30px 8px rgba(255, 99, 132, 0.5);
+    }
+}
+
+/* Instagram con resplandor naranja/rosa */
+.social-icon[aria-label="Instagram"] {
+    animation: bounce-big 2s ease-in-out infinite,
+               glow-intense 3s ease-in-out infinite !important;
+    box-shadow: 0 10px 35px rgba(240, 148, 51, 0.3),
+                0 0 20px rgba(188, 24, 136, 0.3) !important;
+}
+
+.social-icon[aria-label="Instagram"]:hover {
+    box-shadow: 0 20px 50px rgba(240, 148, 51, 0.5),
+                0 0 40px rgba(188, 24, 136, 0.5) !important;
+}
+
+/* Facebook con resplandor azul */
+.social-icon[aria-label="Facebook"] {
+    animation: bounce-big 2s ease-in-out 0.3s infinite,
+               glow-intense 3s ease-in-out 0.3s infinite !important;
+    box-shadow: 0 10px 35px rgba(24, 119, 242, 0.3),
+                0 0 20px rgba(12, 99, 212, 0.3) !important;
+}
+
+.social-icon[aria-label="Facebook"]:hover {
+    box-shadow: 0 20px 50px rgba(24, 119, 242, 0.5),
+                0 0 40px rgba(12, 99, 212, 0.5) !important;
+}
+
+/* YouTube con resplandor rojo */
+.social-icon[aria-label="YouTube"] {
+    animation: bounce-big 2s ease-in-out 0.6s infinite,
+               glow-intense 3s ease-in-out 0.6s infinite !important;
+    box-shadow: 0 10px 35px rgba(255, 0, 0, 0.3),
+                0 0 20px rgba(204, 0, 0, 0.3) !important;
+}
+
+.social-icon[aria-label="YouTube"]:hover {
+    box-shadow: 0 20px 50px rgba(255, 0, 0, 0.5),
+                0 0 40px rgba(204, 0, 0, 0.5) !important;
+}
+
+/* LinkedIn con resplandor azul corporativo */
+.social-icon[aria-label="LinkedIn"] {
+    animation: bounce-big 2s ease-in-out 0.9s infinite,
+               glow-intense 3s ease-in-out 0.9s infinite !important;
+    box-shadow: 0 10px 35px rgba(0, 119, 181, 0.3),
+                0 0 20px rgba(0, 88, 133, 0.3) !important;
+}
+
+.social-icon[aria-label="LinkedIn"]:hover {
+    box-shadow: 0 20px 50px rgba(0, 119, 181, 0.5),
+                0 0 40px rgba(0, 88, 133, 0.5) !important;
+}
+
+/* Hover ESPECTACULAR - Crecer AÚN MÁS */
+.social-icon:hover {
+    transform: translateY(-20px) scale(1.35) rotate(8deg) !important;
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Anillos más grandes y llamativos - AJUSTADOS PARA CUADRADOS */
+@keyframes ring-big {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+.social-icon::after {
+    border-width: 4px !important;
+    border-radius: 30px !important;
+    animation: ring-big 2.5s ease-out infinite !important;
+}
+
+/* Agregar un segundo anillo - CUADRADO */
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 30px !important;
+    border: 3px solid currentColor;
+    opacity: 0;
+    animation: ring-big 2.5s ease-out 0.5s infinite;
+    pointer-events: none;
+}
+
+.social-icon[aria-label="Instagram"]::before {
+    border-color: #f09433;
+}
+
+.social-icon[aria-label="Facebook"]::before {
+    border-color: #1877f2;
+}
+
+.social-icon[aria-label="YouTube"]::before {
+    border-color: #ff0000;
+}
+
+.social-icon[aria-label="LinkedIn"]::before {
+    border-color: #0077b5;
+}
+
+/* Título MÁS GRANDE y llamativo */
+.footer-social h4 {
+    font-size: 1.8rem !important;
+    margin-bottom: 3rem !important;
+    text-shadow: 2px 2px 4px rgba(255, 99, 132, 0.2);
+    text-align: center !important;
+    width: 100%;
+    display: block !important;
+}
+
+.footer-social h4::after {
+    width: 80px !important;
+    height: 5px !important;
+    bottom: -15px !important;
+}
+
+/* Partículas flotantes alrededor */
+@keyframes float-particle {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(20px, -30px) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+/* Agregar efecto de estrellitas alrededor en hover */
+.social-icon:hover {
+    position: relative;
+}
+
+/* Responsive - Mantener grandes en móvil - CUADRADOS */
+@media (max-width: 768px) {
+    .social-icon {
+        width: 95px !important;
+        height: 95px !important;
+        font-size: 2.4rem !important;
+        border-radius: 22px !important;
+    }
+
+    .social-icons {
+        gap: 1.5rem !important;
+        max-width: 100% !important;
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        width: 85px !important;
+        height: 85px !important;
+        font-size: 2.1rem !important;
+        border-radius: 20px !important;
+    }
+
+    .social-icons {
+        gap: 1rem !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+/* ===== SECCIÓN DE REDES SOCIALES - ANCHO COMPLETO ===== */
+
+/* Nueva sección de redes sociales a lo ancho del footer */
+.footer-social-full {
+    width: 100%;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.footer-social-full h4 {
+    font-size: 1.8rem !important;
+    margin-bottom: 3rem !important;
+    text-shadow: 2px 2px 4px rgba(255, 99, 132, 0.2);
+    text-align: center !important;
+    width: 100%;
+    display: block !important;
+    color: #ff6384;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-social-full h4::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(90deg, #ff6384, #ff8fa3);
+    border-radius: 2px;
+}
+
+.footer-social-full .social-icons {
+    display: flex;
+    gap: 3rem !important;
+    justify-content: space-evenly !important;
+    align-items: center;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 1.5rem 2rem !important;
+}
+
+/* Ajustar responsive para sección completa */
+@media (max-width: 768px) {
+    .footer-social-full .social-icons {
+        gap: 2rem !important;
+        max-width: 100% !important;
+        padding: 1rem !important;
+    }
+    
+    .footer-social-full {
+        padding: 2rem 0 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-social-full .social-icons {
+        gap: 1.5rem !important;
+    }
+    
+    .footer-social-full h4 {
+        font-size: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+
+/* ===== SECCIÓN DE CURSOS ONLINE ===== */
+
+.online-courses {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #fef5f8 0%, #ffffff 50%, #f0f8ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.online-courses::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 99, 132, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.course-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 99, 132, 0.2);
+}
+
+.course-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6384 0%, #ff8fa3 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(255, 99, 132, 0.3);
+}
+
+.course-badge.destacado {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #2d2d2d;
+}
+
+.course-badge.nuevo {
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+}
+
+.course-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.course-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.course-content {
+    padding: 2rem;
+}
+
+.course-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.course-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.course-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.course-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.course-feature i {
+    color: #ff6384;
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.btn-course {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Animación de entrada de cursos */
+@keyframes courseSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-card {
+    animation: courseSlideUp 0.6s ease-out both;
+}
+
+.course-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.course-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.course-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .course-image {
+        height: 200px;
+    }
+}
+
+
+/* ===== PÁGINAS DE DETALLE DE CURSOS ===== */
+
+/* Hero del curso */
+.course-detail-hero {
+    position: relative;
+    padding: 8rem 0 4rem 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.course-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.9) 0%, rgba(45, 45, 45, 0.85) 100%);
+}
+
+.course-hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+}
+
+.course-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+.course-hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.course-hero-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-feature i {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+/* Grid de contenido */
+.course-detail-content {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.course-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: start;
+}
+
+.course-main-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.course-description-section h2,
+.course-curriculum h2,
+.course-instructor h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.course-description-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.course-benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.course-benefits-list li {
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.course-benefits-list i {
+    color: #ff6384;
+    font-size: 1.2rem;
+}
+
+/* Currículum del curso */
+.course-curriculum {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.curriculum-module {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ff6384;
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.module-header h3 {
+    font-size: 1.2rem;
+    color: #2d2d2d;
+    font-weight: 600;
+}
+
+.module-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6384 0%, #ff8fa3 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.module-duration {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.module-lessons {
+    list-style: none;
+    padding: 0;
+}
+
+.module-lessons li {
+    padding: 0.5rem 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.module-lessons i {
+    color: #ff6384;
+    width: 20px;
+}
+
+/* Instructor */
+.course-instructor {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.instructor-card {
+    display: flex;
+    gap: 2rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.instructor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.instructor-info h3 {
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    margin-bottom: 0.5rem;
+}
+
+.instructor-title {
+    color: #ff6384;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.instructor-bio {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Sidebar */
+.course-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.course-price-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(255, 99, 132, 0.15);
+    margin-bottom: 2rem;
+}
+
+.price-header h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2d2d2d;
+    margin-bottom: 1.5rem;
+}
+
+.price-amount {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.price-amount.price-reveal {
+    animation: priceReveal 0.6s ease-out;
+}
+
+@keyframes priceReveal {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.price-symbol {
+    font-size: 2rem;
+    color: #ff6384;
+    vertical-align: super;
+}
+
+.price-value {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #2d2d2d;
+    font-family: 'Playfair Display', serif;
+}
+
+.price-currency {
+    font-size: 1.5rem;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.price-subtext {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-large {
+    padding: 1.25rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price-features {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.price-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: #666;
+}
+
+.price-feature i {
+    color: #ff6384;
+    font-size: 1.1rem;
+}
+
+.money-back-guarantee {
+    display: flex;
+    gap: 1rem;
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.money-back-guarantee i {
+    font-size: 2rem;
+    color: #0072ff;
+}
+
+.money-back-guarantee strong {
+    display: block;
+    color: #2d2d2d;
+    margin-bottom: 0.25rem;
+}
+
+.money-back-guarantee p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Stats */
+.course-stats {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-item i {
+    font-size: 2rem;
+    color: #ff6384;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.3rem;
+    color: #2d2d2d;
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Testimonials simples */
+.course-testimonials {
+    padding: 4rem 0;
+    background: white;
+}
+
+.course-testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonials-grid-simple {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-simple {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.testimonial-simple .stars {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-simple p {
+    font-style: italic;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author-simple strong {
+    display: block;
+    color: #2d2d2d;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-author-simple span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Footer simple */
+.footer-simple {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-links-simple {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-links-simple a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links-simple a:hover {
+    color: #ff6384;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .course-detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .course-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .course-main-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .instructor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .instructor-image {
+        margin: 0 auto;
+    }
+}
+

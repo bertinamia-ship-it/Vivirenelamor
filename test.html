@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test - Enlaces de archivos</title>
+</head>
+<body>
+    <h1>Verificación de Enlaces</h1>
+    <script>
+        // Test CSS
+        fetch('diseño.css')
+            .then(r => r.ok ? console.log('✅ CSS cargado correctamente') : console.log('❌ Error CSS'))
+            .catch(e => console.log('❌ Error CSS:', e));
+        
+        // Test JS
+        fetch('funciones.js')
+            .then(r => r.ok ? console.log('✅ JS cargado correctamente') : console.log('❌ Error JS'))
+            .catch(e => console.log('❌ Error JS:', e));
+    </script>
+</body>
+</html>
