@@ -3925,3 +3925,215 @@ section {
     }
 }
 
+
+/* ==============================================
+   TERAPIAS ONLINE PAGE
+   ============================================== */
+
+.therapies-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 50vh;
+}
+
+.therapies-section {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.therapy-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.therapy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+}
+
+.therapy-card:nth-child(even) {
+    grid-template-columns: 1fr 400px;
+}
+
+.therapy-card:nth-child(even) .therapy-image {
+    order: 2;
+}
+
+.therapy-card:nth-child(even) .therapy-content {
+    order: 1;
+}
+
+.therapy-image {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.therapy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.therapy-card:hover .therapy-image img {
+    transform: scale(1.1);
+}
+
+.therapy-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.therapy-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.therapy-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.therapy-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.therapy-objectives {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.therapy-objectives li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.therapy-objectives li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff6384;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.therapy-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e2e8f0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.therapy-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6384;
+    font-family: 'Playfair Display', serif;
+}
+
+.therapy-duration {
+    font-size: 1rem;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.therapy-duration::before {
+    content: "⏱";
+    font-size: 1.2rem;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5rem 0;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-content .btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+}
+
+/* Responsive Therapies */
+@media (max-width: 1024px) {
+    .therapy-card,
+    .therapy-card:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+    
+    .therapy-card:nth-child(even) .therapy-image {
+        order: 1;
+    }
+    
+    .therapy-card:nth-child(even) .therapy-content {
+        order: 2;
+    }
+    
+    .therapy-image {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .therapy-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .therapy-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .therapy-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+}

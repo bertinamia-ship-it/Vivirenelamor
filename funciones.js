@@ -174,6 +174,63 @@ const translations = {
         coursesCtaText: "Agenda una sesión gratuita de 30 minutos y te ayudaré a encontrar el curso perfecto para ti",
         coursesCtaButton: "Agendar consulta",
         
+        // TERAPIAS-ONLINE.HTML
+        therapiesPageTitle: "Terapias Online | Vivir en el Amor",
+        therapiesHeroTitle: "Terapias Online",
+        therapiesHeroSubtitle: "Sanación profunda desde la comodidad de tu hogar a través de videoconferencia",
+        
+        // Constelación Fluvial
+        therapyFluvialTitle: "Constelación Fluvial",
+        therapyFluvialDesc1: "La Constelación Fluvial es una terapia sistémica que se hace de manera individual, está basada en las constelaciones familiares y utiliza el agua como vehículo de comunicación con los campos morfogenéticos; se enfoca en romper las lealtades invisibles que tenemos con nuestros ancestros para liberar programas heredados relacionados con la falta de éxito, dificultad en la pareja, falta de prosperidad, enfermedades, abusos, duelos, ansiedad, adicciones, suicidios, infertilidad, etc.",
+        therapyFluvialDesc2: "La duración es de dos horas, tú eliges la necesidad que tengas para resolver.",
+        therapyFluvialDesc3: "Modalidad en línea por videoconferencia desde cualquier parte del mundo a través de la plataforma de Zoom de manera simultánea.",
+        therapyFluvialPrice: "Precio: $200 USD",
+        therapyFluvialDuration: "Duración: 2 horas",
+        
+        // Psicoterapia Online
+        therapyPsychoTitle: "Psicoterapia Online",
+        therapyPsychoDesc1: "Terapia psicológica con enfoque familiar sistémico, donde se abordan los problemas generados en el contexto de las relaciones familiares o con personas significativas en la vida de las personas. La terapia sistémica tiene como objetivo encontrar solución a los problemas prácticos y reales. Con este enfoque se trabaja en el reconocimiento de los patrones disfuncionales dentro de la vida de las personas.",
+        therapyPsychoObjectivesTitle: "Los objetivos principales son:",
+        therapyPsychoObj1: "Restablecer el equilibrio de la persona",
+        therapyPsychoObj2: "Aumentar la comprensión de su malestar y problemática",
+        therapyPsychoObj3: "Estimular el trabajo emocional y personal para ser protagonista en su transformación y cambio",
+        therapyPsychoObj4: "Desarrollar estrategias de afrontamiento y habilidades de resolución de problemas específicos",
+        therapyPsychoDesc2: "Modalidad en línea por videoconferencia desde cualquier parte del mundo a través de Zoom de manera simultánea.",
+        therapyPsychoPrice: "Precio: $100 USD",
+        therapyPsychoDuration: "Duración: 1 hora",
+        
+        // Constelación de Pareja
+        therapyCoupleTitle: "Constelación de Pareja",
+        therapyCoupleDesc1: "Es una terapia que usa el método de las constelaciones fluviales y tiene como finalidad diagnosticar y solucionar los conflictos actuales del consultante en la relación de pareja, se trabaja en cada uno de los niveles del amor: material, sexual, emocional, mental, consciente, cósmico, divino.",
+        therapyCoupleDesc2: "También se puede hacer de manera individual para diagnosticar cómo está la persona en cada nivel y sanar su vida amorosa aunque no esté en pareja.",
+        therapyCoupleDesc3: "Modalidad en línea por Zoom desde cualquier parte del mundo.",
+        therapyCouplePrice: "Precio: $200 USD",
+        therapyCoupleDuration: "Duración: 2 horas",
+        
+        // Cierre Amoroso de Parejas Anteriores
+        therapyClosureTitle: "Cierre Amoroso de Parejas Anteriores",
+        therapyClosureDesc1: "El cierre de parejas se basa en el método de las constelaciones fluviales que usa el agua para accesar la información de los campos morfogenéticos, es una terapia que sirve para cerrar los ciclos que quedaron abiertos con cada una de las parejas, desde el primer amor hasta el último, se hace una conexión de almas integrando el aprendizaje con cada uno a través del agradecimiento y del entendimiento del patrón principal en su forma de relacionarse, el cual está sostenido en lealtades familiares y es la raíz de las relaciones de pareja tóxicas.",
+        therapyClosureDesc2: "Modalidad en línea a través de Zoom.",
+        therapyClosurePrice: "Precio: $100 USD",
+        therapyClosureDuration: "Duración: 1 hora",
+        
+        // Terapia Fluvial
+        therapyRiverTitle: "Terapia Fluvial",
+        therapyRiverDesc1: "Se basa en el método de las constelaciones fluviales y utiliza como vehículo el agua y figurines de hule espuma para representar a los miembros de la familia y el tema a trabajar. Se hace de manera online a través de Zoom y su duración es de una hora. La diferencia con una constelación fluvial es que sólo se trabaja uno de los temas a elegir mientras que la constelación incluye todos.",
+        therapyRiverTopicsTitle: "Los temas a elegir son:",
+        therapyRiverTopic1: "Sanar a tu familia de origen (tus padres y hermanos)",
+        therapyRiverTopic2: "Sanar a tu familia actual (tu pareja e hijos)",
+        therapyRiverTopic3: "Sanar heridas de la infancia",
+        therapyRiverTopic4: "Romper una lealtad",
+        therapyRiverDesc2: "Todas las tiradas incluyen trabajo con papá y mamá.",
+        therapyRiverPrice: "Precio: $100 USD",
+        therapyRiverDuration: "Duración: 1 hora",
+        
+        // CTA Terapias
+        therapiesCTATitle: "¿Lista para comenzar tu transformación?",
+        therapiesCTASubtitle: "Agenda tu sesión hoy y da el primer paso hacia la sanación",
+        therapiesCTAButton: "Agendar Sesión",
+        
         // PÁGINAS DE DETALLE DE CURSOS - GENERAL
         backToCourses: "Volver a cursos",
         moduleLabel: "Módulo 1",
@@ -548,6 +605,63 @@ const translations = {
         coursesCtaTitle: "Don't know which one to choose?",
         coursesCtaText: "Schedule a free 30-minute session and I'll help you find the perfect course for you",
         coursesCtaButton: "Schedule consultation",
+        
+        // TERAPIAS-ONLINE.HTML
+        therapiesPageTitle: "Online Therapies | Living in Love",
+        therapiesHeroTitle: "Online Therapies",
+        therapiesHeroSubtitle: "Deep healing from the comfort of your home through videoconference",
+        
+        // Fluvial Constellation
+        therapyFluvialTitle: "Fluvial Constellation",
+        therapyFluvialDesc1: "Fluvial Constellation is an individual systemic therapy based on family constellations that uses water as a vehicle for communication with morphogenetic fields; it focuses on breaking invisible loyalties we have with our ancestors to release inherited programs related to lack of success, difficulty in relationships, lack of prosperity, diseases, abuse, grief, anxiety, addictions, suicides, infertility, etc.",
+        therapyFluvialDesc2: "Duration is two hours, you choose the need you have to resolve.",
+        therapyFluvialDesc3: "Online modality via videoconference from anywhere in the world through Zoom platform simultaneously.",
+        therapyFluvialPrice: "Price: $200 USD",
+        therapyFluvialDuration: "Duration: 2 hours",
+        
+        // Online Psychotherapy
+        therapyPsychoTitle: "Online Psychotherapy",
+        therapyPsychoDesc1: "Psychological therapy with systemic family approach, addressing problems generated in the context of family relationships or significant people in people's lives. Systemic therapy aims to find solutions to practical and real problems. This approach works on recognizing dysfunctional patterns within people's lives.",
+        therapyPsychoObjectivesTitle: "The main objectives are:",
+        therapyPsychoObj1: "Restore the person's balance",
+        therapyPsychoObj2: "Increase understanding of their discomfort and problems",
+        therapyPsychoObj3: "Stimulate emotional and personal work to be the protagonist in their transformation and change",
+        therapyPsychoObj4: "Develop coping strategies and specific problem-solving skills",
+        therapyPsychoDesc2: "Online modality via videoconference from anywhere in the world through Zoom simultaneously.",
+        therapyPsychoPrice: "Price: $100 USD",
+        therapyPsychoDuration: "Duration: 1 hour",
+        
+        // Couple Constellation
+        therapyCoupleTitle: "Couple Constellation",
+        therapyCoupleDesc1: "It is a therapy that uses the fluvial constellations method and aims to diagnose and resolve the consultant's current conflicts in their relationship, working on each level of love: material, sexual, emotional, mental, conscious, cosmic, divine.",
+        therapyCoupleDesc2: "It can also be done individually to diagnose how the person is at each level and heal their love life even if they are not in a relationship.",
+        therapyCoupleDesc3: "Online modality via Zoom from anywhere in the world.",
+        therapyCouplePrice: "Price: $200 USD",
+        therapyCoupleDuration: "Duration: 2 hours",
+        
+        // Loving Closure of Previous Partners
+        therapyClosureTitle: "Loving Closure of Previous Partners",
+        therapyClosureDesc1: "Partner closure is based on the fluvial constellations method that uses water to access information from morphogenetic fields, it is a therapy that serves to close cycles that remained open with each partner, from first love to the last, creating a soul connection integrating the learning with each one through gratitude and understanding the main pattern in their way of relating, which is sustained by family loyalties and is the root of toxic couple relationships.",
+        therapyClosureDesc2: "Online modality via Zoom.",
+        therapyClosurePrice: "Price: $100 USD",
+        therapyClosureDuration: "Duration: 1 hour",
+        
+        // Fluvial Therapy
+        therapyRiverTitle: "Fluvial Therapy",
+        therapyRiverDesc1: "It is based on the fluvial constellations method and uses water and foam rubber figurines as vehicles to represent family members and the topic to be worked on. It is done online through Zoom and its duration is one hour. The difference with a fluvial constellation is that only one of the topics to choose is worked on while the constellation includes all.",
+        therapyRiverTopicsTitle: "The topics to choose from are:",
+        therapyRiverTopic1: "Heal your family of origin (your parents and siblings)",
+        therapyRiverTopic2: "Heal your current family (your partner and children)",
+        therapyRiverTopic3: "Heal childhood wounds",
+        therapyRiverTopic4: "Break a loyalty",
+        therapyRiverDesc2: "All sessions include work with mom and dad.",
+        therapyRiverPrice: "Price: $100 USD",
+        therapyRiverDuration: "Duration: 1 hour",
+        
+        // Therapies CTA
+        therapiesCTATitle: "Ready to begin your transformation?",
+        therapiesCTASubtitle: "Schedule your session today and take the first step toward healing",
+        therapiesCTAButton: "Schedule Session",
         
         // COURSE DETAIL PAGES - GENERAL
         backToCourses: "Back to courses",
