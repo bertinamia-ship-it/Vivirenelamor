@@ -1197,6 +1197,209 @@ section {
     }
 }
 
+/* ========================================
+   TEAM PAGE - FULL PROFILE SECTION
+   ======================================== */
+
+.team-page {
+    padding: var(--spacing-xxl) 0;
+    background: #f8f9fa;
+}
+
+.team-member-full {
+    background: white;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-xxl);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 0;
+}
+
+.team-member-full.reverse {
+    grid-template-columns: 1fr 400px;
+}
+
+.team-member-full.reverse .member-full-image {
+    order: 2;
+}
+
+.team-member-full.reverse .member-full-info {
+    order: 1;
+}
+
+.member-full-image {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.member-full-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-full-info {
+    padding: var(--spacing-xxl);
+}
+
+.member-full-info h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.member-full-role {
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+    margin-bottom: var(--spacing-lg);
+    display: block;
+}
+
+.member-full-description {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.member-full-description p {
+    margin-bottom: var(--spacing-md);
+}
+
+.member-full-description h3 {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+.credentials-list,
+.specialties-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.credentials-list li,
+.specialties-list li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: #555;
+    line-height: 1.6;
+}
+
+.credentials-list li::before,
+.specialties-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.member-social-links {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.member-social-links a {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-circle);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: all var(--transition);
+}
+
+.member-social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(170, 5, 120, 0.3);
+}
+
+/* Team CTA Section */
+.team-cta {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.team-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    color: white;
+}
+
+.team-cta p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.team-cta .btn {
+    background: white;
+    color: var(--color-primary);
+    padding: var(--spacing-md) var(--spacing-xxl);
+    font-size: 1.1rem;
+}
+
+.team-cta .btn:hover {
+    background: var(--color-light);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Team Page */
+@media (max-width: 1024px) {
+    .team-member-full,
+    .team-member-full.reverse {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member-full.reverse .member-full-image,
+    .team-member-full.reverse .member-full-info {
+        order: unset;
+    }
+    
+    .member-full-image {
+        min-height: 400px;
+    }
+    
+    .member-full-info {
+        padding: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .member-full-info h2 {
+        font-size: 2rem;
+    }
+    
+    .member-full-image {
+        min-height: 350px;
+    }
+    
+    .team-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .team-cta p {
+        font-size: 1rem;
+    }
+}
+
 /* Contacto Section */
 .contact {
     background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
