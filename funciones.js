@@ -192,61 +192,48 @@ const translations = {
         badgeFeatured: "Destacado",
         badgeNew: "Nuevo",
         
-        // Curso 1 - Sanación del Abandono
-        courseAbandonmentTitle: "Sanación de la Herida del Abandono",
-        courseAbandonmentDesc: "Libérate de los patrones de abandono y construye relaciones seguras y duraderas",
-        courseAbandonmentFeature1: "8 módulos completos",
-        courseAbandonmentFeature2: "6 semanas de duración",
-        courseAbandonmentFeature3: "Certificado incluido",
-        courseAbandonmentButton: "Lo quiero",
-        courseAbandonmentBadge: "Popular",
-        courseAbandonmentModulesShort: "8 módulos en video",
-        courseAbandonmentDurationShort: "Acceso de por vida",
-        courseAbandonmentCertificateShort: "Material descargable",
+        // Producto 1 - Taller Digital Infidelidad
+        productInfidelityBadge: "Taller Digital",
+        productInfidelityTitle: "Plan de Acción Supera una Infidelidad y Recupera la Confianza en ti",
+        productInfidelityDesc: "Plan de Acción de 5 pasos para recuperar tu amor y pasión después de una infidelidad, sin importar el tipo de traición.",
+        productInfidelityFeature1: "5 pasos probados",
+        productInfidelityFeature2: "Recupera tu autoestima",
+        productInfidelityFeature3: "Material digital",
         
-        // Curso 2 - Amor Consciente
-        courseConscientLoveTitle: "Amor Consciente",
-        courseConscientLoveDesc: "Aprende a crear relaciones auténticas, profundas y conscientes",
-        courseConscientLoveFeature1: "10 módulos completos",
-        courseConscientLoveFeature2: "8 semanas de duración",
-        courseConscientLoveFeature3: "Comunidad privada",
-        courseConscientLoveButton: "Lo quiero",
-        courseConscientLoveBadge: "Destacado",
-        courseConscientLoveModulesShort: "Curso completo",
-        courseConscientLoveDurationShort: "Acceso de por vida",
-        courseConscientLoveCommunityShort: "Ejercicios prácticos",
+        // Producto 2 - Ebook Lealtades Familiares
+        productEbookBadge: "Ebook Digital",
+        productEbookTitle: "¿Qué son las lealtades familiares y cómo funcionan?",
+        productEbookDesc: "Compendio sobre el árbol genealógico y enfoque transgeneracional para entender las lealtades familiares y programas tóxicos.",
+        productEbookFeature1: "Libro digital completo",
+        productEbookFeature2: "Árbol genealógico",
+        productEbookFeature3: "Toma de conciencia",
         
-        // Curso 3 - Autoestima
-        courseSelfEsteemTitle: "Autoestima y Amor Propio",
-        courseSelfEsteemDesc: "Reconstruye tu confianza y ámate incondicionalmente",
-        courseSelfEsteemFeature1: "6 módulos completos",
-        courseSelfEsteemFeature2: "4 semanas de duración",
-        courseSelfEsteemFeature3: "Workbook incluido",
-        courseSelfEsteemButton: "Lo quiero",
-        courseSelfEsteemBadge: "Nuevo",
-        courseSelfEsteemModulesShort: "6 módulos",
-        courseSelfEsteemDurationShort: "Acceso de por vida",
-        courseSelfEsteemWorkbookShort: "Workbook incluido",
+        // Producto 3 - Pack Meditaciones
+        productMeditationsBadge: "Pack Digital",
+        productMeditationsTitle: "Meditaciones para pasar del dolor a Vivir una Relación de Pareja Sagrada",
+        productMeditationsDesc: "6 meditaciones basadas en constelaciones familiares para sanar, amar y vivir una relación sagrada.",
+        productMeditationsFeature1: "6 meditaciones guiadas",
+        productMeditationsFeature2: "Supera infidelidad",
+        productMeditationsFeature3: "Rompe lealtades",
         
-        // Curso 4 - Comunicación
-        courseCommunicationTitle: "Comunicación en Pareja",
-        courseCommunicationDesc: "Transforma tus relaciones a través de la comunicación efectiva y empática",
-        courseCommunicationFeature1: "7 módulos completos",
-        courseCommunicationFeature2: "5 semanas de duración",
-        courseCommunicationFeature3: "Soporte directo",
-        courseCommunicationButton: "Lo quiero",
-        courseCommunicationModulesShort: "7 módulos",
-        courseCommunicationDurationShort: "Acceso de por vida",
-        courseCommunicationSupportShort: "Ejercicios prácticos",
+        // Producto 4 - Curso Vivir en el Amor
+        productCourseBadge: "Programa Digital",
+        productCourseTitle: "Curso Vivir en el Amor",
+        productCourseDesc: "Entrenamiento completo para construir una relación de pareja comprometida, cercana y amorosa. Equivale a más de 20 terapias.",
+        productCourseFeature1: "Video clases + ejercicios",
+        productCourseFeature2: "Grupo Facebook de por vida",
+        productCourseFeature3: "Sesiones Q&A grupales",
         
-        // Curso 5 - Supera la Infidelidad
-        courseInfidelityTitle: "Supera la Infidelidad",
-        courseInfidelityDesc: "Sana las heridas de la infidelidad y reconstruye la confianza en ti misma y en tu relación",
-        courseInfidelityBadge: "Especializado",
-        courseInfidelityModulesShort: "Curso completo en video",
-        courseInfidelityDurationShort: "Acceso de por vida",
-        courseInfidelitySupportShort: "Guías de sanación",
+        // Producto 5 - Programa VIP
+        productVIPBadge: "Programa VIP",
+        productVIPTitle: "Programa de Acompañamiento en Vivo para salir de la Crisis Amorosa",
+        productVIPDesc: "Curso Vivir en el Amor + sesiones de coaching semanales EN VIVO con Michelle y soporte directo por WhatsApp.",
+        productVIPFeature1: "Coaching semanal EN VIVO",
+        productVIPFeature2: "WhatsApp exclusivo VIP",
+        productVIPFeature3: "Contacto directo con Michelle",
+        
         coursePriceLabel: "Precio:",
+        courseButtonWant: "Lo quiero",
         
         // CTA Section
         coursesCtaTitle: "¿No sabes cuál elegir?",
@@ -780,48 +767,48 @@ const translations = {
         courseAbandonmentCertificateShort: "Downloadable materials",
         
         // Course 2 - Conscious Love
-        courseConscientLoveTitle: "Conscious Love",
-        courseConscientLoveDesc: "Learn to create authentic, profound, and conscious relationships",
-        courseConscientLoveFeature1: "10 complete modules",
-        courseConscientLoveFeature2: "8-week duration",
-        courseConscientLoveFeature3: "Private community",
-        courseConscientLoveButton: "I want it",
-        courseConscientLoveBadge: "Featured",
-        courseConscientLoveModulesShort: "Complete course",
-        courseConscientLoveDurationShort: "Lifetime access",
-        courseConscientLoveCommunityShort: "Practical exercises",
+        // Product 1 - Digital Workshop Infidelity
+        productInfidelityBadge: "Digital Workshop",
+        productInfidelityTitle: "Action Plan to Overcome Infidelity and Recover Your Self-Confidence",
+        productInfidelityDesc: "5-step Action Plan to recover your love and passion after infidelity, regardless of the type of betrayal.",
+        productInfidelityFeature1: "5 proven steps",
+        productInfidelityFeature2: "Recover your self-esteem",
+        productInfidelityFeature3: "Digital materials",
         
-        // Course 3 - Self-esteem
-        courseSelfEsteemTitle: "Self-Esteem and Self-Love",
-        courseSelfEsteemDesc: "Rebuild your confidence and love yourself unconditionally",
-        courseSelfEsteemFeature1: "6 complete modules",
-        courseSelfEsteemFeature2: "4-week duration",
-        courseSelfEsteemFeature3: "Workbook included",
-        courseSelfEsteemButton: "I want it",
-        courseSelfEsteemBadge: "New",
-        courseSelfEsteemModulesShort: "6 modules",
-        courseSelfEsteemDurationShort: "Lifetime access",
-        courseSelfEsteemWorkbookShort: "Workbook included",
+        // Product 2 - Ebook Family Loyalties
+        productEbookBadge: "Digital Ebook",
+        productEbookTitle: "What are family loyalties and how do they work?",
+        productEbookDesc: "Compendium on the family tree and transgenerational approach to understand family loyalties and toxic programs.",
+        productEbookFeature1: "Complete digital book",
+        productEbookFeature2: "Family tree",
+        productEbookFeature3: "Awareness building",
         
-        // Course 4 - Communication
-        courseCommunicationTitle: "Couple Communication",
-        courseCommunicationDesc: "Transform your relationships through effective and empathetic communication",
-        courseCommunicationFeature1: "7 complete modules",
-        courseCommunicationFeature2: "5-week duration",
-        courseCommunicationFeature3: "Direct support",
-        courseCommunicationButton: "I want it",
-        courseCommunicationModulesShort: "7 modules",
-        courseCommunicationDurationShort: "Lifetime access",
-        courseCommunicationSupportShort: "Practical exercises",
+        // Product 3 - Meditations Pack
+        productMeditationsBadge: "Digital Pack",
+        productMeditationsTitle: "Meditations to go from pain to Living a Sacred Couple Relationship",
+        productMeditationsDesc: "6 meditations based on family constellations to heal, love and live a sacred relationship.",
+        productMeditationsFeature1: "6 guided meditations",
+        productMeditationsFeature2: "Overcome infidelity",
+        productMeditationsFeature3: "Break loyalties",
         
-        // Course 5 - Overcoming Infidelity
-        courseInfidelityTitle: "Overcome Infidelity",
-        courseInfidelityDesc: "Heal the wounds of infidelity and rebuild trust in yourself and your relationship",
-        courseInfidelityBadge: "Specialized",
-        courseInfidelityModulesShort: "Complete video course",
-        courseInfidelityDurationShort: "Lifetime access",
-        courseInfidelitySupportShort: "Healing guides",
+        // Product 4 - Living in Love Course
+        productCourseBadge: "Digital Program",
+        productCourseTitle: "Living in Love Course",
+        productCourseDesc: "Complete training to build a committed, close and loving couple relationship. Equivalent to more than 20 therapies.",
+        productCourseFeature1: "Video classes + exercises",
+        productCourseFeature2: "Lifetime Facebook group",
+        productCourseFeature3: "Group Q&A sessions",
+        
+        // Product 5 - VIP Program
+        productVIPBadge: "VIP Program",
+        productVIPTitle: "Live Support Program to get out of Love Crisis",
+        productVIPDesc: "Living in Love course + weekly LIVE coaching sessions with Michelle and direct WhatsApp support.",
+        productVIPFeature1: "Weekly LIVE coaching",
+        productVIPFeature2: "Exclusive VIP WhatsApp",
+        productVIPFeature3: "Direct contact with Michelle",
+        
         coursePriceLabel: "Price:",
+        courseButtonWant: "I want it",
         
         // CTA Section
         coursesCtaTitle: "Don't know which one to choose?",
