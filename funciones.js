@@ -68,6 +68,20 @@ const translations = {
         aboutCta: "Conectar conmigo",
         experienceYears: "años de experiencia",
         
+        // Team section
+        menuTeam: "Equipo",
+        teamTitle: "Nuestro Equipo",
+        teamSubtitle: "Profesionales comprometidos con tu bienestar emocional",
+        team1Name: "Michelle Robles",
+        team1Role: "Fundadora & Terapeuta Principal",
+        team1Description: "Especialista en Sanación Emocional y Relaciones Conscientes con más de 20 años de experiencia. Máster en Psicología Transpersonal y certificada en Terapias Energéticas.",
+        team2Name: "Ana García",
+        team2Role: "Psicóloga Clínica",
+        team2Description: "Psicóloga especializada en terapia de pareja y familia. Enfoque integrador combinando terapia cognitivo-conductual y humanista.",
+        team3Name: "Laura Martínez",
+        team3Role: "Coach de Vida y Relaciones",
+        team3Description: "Coach certificada especializada en desarrollo personal y relaciones conscientes. Facilitadora de talleres de autoestima y amor propio.",
+        
         // Testimonios section - 8 testimonios
         testimonialsTitle: "Historias de transformación",
         testimonialsSubtitle: "Lo que dicen quienes han recorrido este camino",
@@ -562,6 +576,20 @@ const translations = {
         stat3: "satisfaction",
         aboutCta: "Connect with me",
         experienceYears: "years of experience",
+        
+        // Team section
+        menuTeam: "Team",
+        teamTitle: "Our Team",
+        teamSubtitle: "Professionals committed to your emotional well-being",
+        team1Name: "Michelle Robles",
+        team1Role: "Founder & Lead Therapist",
+        team1Description: "Specialist in Emotional Healing and Conscious Relationships with over 20 years of experience. Master's in Transpersonal Psychology and certified in Energy Therapies.",
+        team2Name: "Ana García",
+        team2Role: "Clinical Psychologist",
+        team2Description: "Psychologist specialized in couple and family therapy. Integrative approach combining cognitive-behavioral and humanistic therapy.",
+        team3Name: "Laura Martínez",
+        team3Role: "Life & Relationship Coach",
+        team3Description: "Certified coach specialized in personal development and conscious relationships. Facilitator of self-esteem and self-love workshops.",
         
         // Testimonios section - 8 testimonios
         testimonialsTitle: "Transformation stories",
