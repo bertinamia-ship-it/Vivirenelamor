@@ -3901,6 +3901,31 @@ section {
     letter-spacing: 0.5px;
 }
 
+/* Course Price */
+.course-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.1), rgba(237, 174, 192, 0.1));
+    border-radius: 12px;
+}
+
+.price-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.price-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff6384;
+    font-family: 'Playfair Display', serif;
+}
+
 /* Animación de entrada de cursos */
 @keyframes courseSlideUp {
     from {
@@ -3931,6 +3956,10 @@ section {
 
 .course-card:nth-child(4) {
     animation-delay: 0.4s;
+}
+
+.course-card:nth-child(5) {
+    animation-delay: 0.5s;
 }
 
 /* Responsive */

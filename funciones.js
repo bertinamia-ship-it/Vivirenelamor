@@ -223,6 +223,18 @@ const translations = {
         courseCommunicationFeature2: "5 semanas de duración",
         courseCommunicationFeature3: "Soporte directo",
         courseCommunicationButton: "Lo quiero",
+        courseCommunicationModulesShort: "7 módulos",
+        courseCommunicationDurationShort: "5 semanas",
+        courseCommunicationSupportShort: "Soporte directo",
+        
+        // Curso 5 - Supera la Infidelidad
+        courseInfidelityTitle: "Supera la Infidelidad",
+        courseInfidelityDesc: "Sana las heridas de la infidelidad y reconstruye la confianza en ti misma y en tu relación",
+        courseInfidelityBadge: "Especializado",
+        courseInfidelityModulesShort: "5 módulos intensivos",
+        courseInfidelityDurationShort: "4 semanas",
+        courseInfidelitySupportShort: "Guías de sanación",
+        coursePriceLabel: "Precio:",
         
         // CTA Section
         coursesCtaTitle: "¿No sabes cuál elegir?",
@@ -774,6 +786,18 @@ const translations = {
         courseCommunicationFeature2: "5-week duration",
         courseCommunicationFeature3: "Direct support",
         courseCommunicationButton: "I want it",
+        courseCommunicationModulesShort: "7 modules",
+        courseCommunicationDurationShort: "5 weeks",
+        courseCommunicationSupportShort: "Direct support",
+        
+        // Course 5 - Overcoming Infidelity
+        courseInfidelityTitle: "Overcome Infidelity",
+        courseInfidelityDesc: "Heal the wounds of infidelity and rebuild trust in yourself and your relationship",
+        courseInfidelityBadge: "Specialized",
+        courseInfidelityModulesShort: "5 intensive modules",
+        courseInfidelityDurationShort: "4 weeks",
+        courseInfidelitySupportShort: "Healing guides",
+        coursePriceLabel: "Price:",
         
         // CTA Section
         coursesCtaTitle: "Don't know which one to choose?",
