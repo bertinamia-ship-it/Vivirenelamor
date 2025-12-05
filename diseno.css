@@ -1255,8 +1255,8 @@ section {
 }
 
 .member-full-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto var(--spacing-lg);
     border-radius: 50%;
     overflow: hidden;
@@ -1407,8 +1407,8 @@ section {
     }
     
     .member-full-image {
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
     }
     
     .member-full-info h2 {
@@ -1428,8 +1428,8 @@ section {
     }
     
     .member-full-image {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
         margin-bottom: var(--spacing-md);
     }
     
@@ -1474,8 +1474,8 @@ section {
     }
     
     .member-full-image {
-        width: 160px;
-        height: 160px;
+        width: 230px;
+        height: 230px;
     }
     
     /* Hero para tablet */
@@ -1512,8 +1512,8 @@ section {
     }
     
     .member-full-image {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        height: 180px;
     }
     
     .member-full-info h2 {
