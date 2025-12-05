@@ -159,9 +159,16 @@ const translations = {
         footerContactTitle: "Contacto",
         footerFollowTitle: "Síguenos",
         footerSocialTitle: "Síguenos",
+        footerFollowUs: "Síguenos",
         footerRights: "Todos los derechos reservados.",
         footerPhone: "+34 123 456 789",
         copyright: "© 2023 Vivir en el Amor. Todos los derechos reservados.",
+        footerCopyright: "© 2023 Vivir en el Amor. Todos los derechos reservados.",
+        footerText: "Transformando vidas a través del amor consciente y la sanación holística.",
+        footerQuickLinks: "Enlaces rápidos",
+        footerHome: "Inicio",
+        footerContact: "Contacto",
+        footerPrivacy: "Política de privacidad",
         privacyPolicy: "Política de privacidad",
         termsConditions: "Términos y condiciones",
         
@@ -687,13 +694,22 @@ const translations = {
         
         // Footer
         footerTagline: "Healing hearts, transforming relationships",
+        // Footer
+        footerTagline: "Healing hearts, transforming relationships",
         footerLinksTitle: "Links",
         footerContactTitle: "Contact",
         footerFollowTitle: "Follow us",
         footerSocialTitle: "Follow us",
+        footerFollowUs: "Follow us",
         footerRights: "All rights reserved.",
         footerPhone: "+34 123 456 789",
         copyright: "© 2023 Living in Love. All rights reserved.",
+        footerCopyright: "© 2023 Living in Love. All rights reserved.",
+        footerText: "Transforming lives through conscious love and holistic healing.",
+        footerQuickLinks: "Quick Links",
+        footerHome: "Home",
+        footerContact: "Contact",
+        footerPrivacy: "Privacy Policy",
         privacyPolicy: "Privacy policy",
         termsConditions: "Terms and conditions",
         
@@ -1277,7 +1293,7 @@ function changeLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            // Para elementos input, textarea, select o option
+            // Para elementos input y textarea
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = translations[lang][key];
             } else if (element.tagName === 'OPTION') {
@@ -1286,7 +1302,8 @@ function changeLanguage(lang) {
                 // Para select, actualizar el placeholder si existe
                 const firstOption = element.querySelector('option[disabled][selected]');
                 if (firstOption && firstOption.hasAttribute('data-i18n')) {
-                    firstOption.textContent = translations[lang][key];
+                    const optionKey = firstOption.getAttribute('data-i18n');
+                    firstOption.textContent = translations[lang][optionKey];
                 }
             } else {
                 element.textContent = translations[lang][key];
