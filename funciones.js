@@ -96,19 +96,9 @@ const translations = {
         
         // Rocío Contreras
         teamRocioName: "Rocío Contreras",
-        teamRocioRole: "Psicóloga Clínica Especialista",
-        teamRocioDesc1: "Psicóloga clínica con amplia experiencia en el acompañamiento terapéutico de parejas y familias. Su enfoque integrador combina técnicas de terapia cognitivo-conductual con prácticas humanistas.",
-        teamRocioDesc2: "Especialista en relaciones de pareja, comunicación efectiva y resolución de conflictos. Ha ayudado a numerosas parejas a reconectar y fortalecer sus vínculos emocionales.",
-        teamRocioEducationTitle: "Formación y Certificaciones:",
-        teamRocioEdu1: "Licenciada en Psicología Clínica",
-        teamRocioEdu2: "Especialización en Terapia de Pareja y Familia",
-        teamRocioEdu3: "Certificación en Terapia Cognitivo-Conductual",
-        teamRocioEdu4: "Formación en Comunicación No Violenta",
-        teamRocioSpecialtiesTitle: "Áreas de Especialización:",
-        teamRocioSpec1: "Terapia de pareja y relaciones",
-        teamRocioSpec2: "Resolución de conflictos",
-        teamRocioSpec3: "Comunicación efectiva",
-        teamRocioSpec4: "Fortalecimiento de vínculos emocionales",
+        teamRocioRole: "Administradora del Proyecto",
+        teamRocioDesc1: "Es el pilar fundamental que sostiene la energía de Vivir en el Amor, es la administradora del proyecto y se encarga de que las cosas funcionen en orden para que el amor fluya.",
+        teamRocioDesc2: "Canaliza el conocimiento para gestionar las energías materiales y hacerlas prosperar para todos.",
         
         // Team CTA
         teamCTATitle: "¿Lista para comenzar tu transformación?",
@@ -638,19 +628,9 @@ const translations = {
         
         // Rocío Contreras
         teamRocioName: "Rocío Contreras",
-        teamRocioRole: "Clinical Psychologist Specialist",
-        teamRocioDesc1: "Clinical psychologist with extensive experience in therapeutic accompaniment of couples and families. Her integrative approach combines cognitive-behavioral therapy techniques with humanistic practices.",
-        teamRocioDesc2: "Specialist in couple relationships, effective communication, and conflict resolution. She has helped numerous couples reconnect and strengthen their emotional bonds.",
-        teamRocioEducationTitle: "Education and Certifications:",
-        teamRocioEdu1: "Bachelor's Degree in Clinical Psychology",
-        teamRocioEdu2: "Specialization in Couple and Family Therapy",
-        teamRocioEdu3: "Certification in Cognitive-Behavioral Therapy",
-        teamRocioEdu4: "Training in Nonviolent Communication",
-        teamRocioSpecialtiesTitle: "Areas of Expertise:",
-        teamRocioSpec1: "Couple therapy and relationships",
-        teamRocioSpec2: "Conflict resolution",
-        teamRocioSpec3: "Effective communication",
-        teamRocioSpec4: "Strengthening emotional bonds",
+        teamRocioRole: "Project Administrator",
+        teamRocioDesc1: "She is the fundamental pillar that sustains the energy of Living in Love, the project administrator who ensures that things work in order so that love can flow.",
+        teamRocioDesc2: "She channels knowledge to manage material energies and make them prosper for everyone.",
         
         // Team CTA
         teamCTATitle: "Ready to start your transformation?",
