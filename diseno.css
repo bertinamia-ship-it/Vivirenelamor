@@ -1366,40 +1366,136 @@ section {
 
 /* Responsive Team Page */
 @media (max-width: 1024px) {
-    .team-member-full,
-    .team-member-full.reverse {
-        grid-template-columns: 1fr;
-    }
-    
-    .team-member-full.reverse .member-full-image,
-    .team-member-full.reverse .member-full-info {
-        order: unset;
+    .team-member-full {
+        padding: var(--spacing-lg);
+        max-width: 700px;
     }
     
     .member-full-image {
-        min-height: 400px;
+        width: 180px;
+        height: 180px;
     }
     
-    .member-full-info {
-        padding: var(--spacing-xl);
-    }
-}
-
-@media (max-width: 768px) {
     .member-full-info h2 {
         font-size: 2rem;
     }
     
+    .credentials-list,
+    .specialties-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member-full {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+    }
+    
     .member-full-image {
-        min-height: 350px;
+        width: 150px;
+        height: 150px;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .member-full-info h2 {
+        font-size: 1.75rem;
+    }
+    
+    .member-full-role {
+        font-size: 0.8rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .member-full-description {
+        font-size: 0.95rem;
+    }
+    
+    .member-full-description h3 {
+        font-size: 1.1rem;
+        margin-top: var(--spacing-md);
+    }
+    
+    .credentials-list li,
+    .specialties-list li {
+        font-size: 0.9rem;
     }
     
     .team-cta h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     .team-cta p {
         font-size: 1rem;
+    }
+}
+
+/* Media Queries para iPad y Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Team Section para tablet */
+    .team-member-full {
+        max-width: 650px;
+        padding: var(--spacing-lg);
+    }
+    
+    .member-full-image {
+        width: 160px;
+        height: 160px;
+    }
+    
+    /* Hero para tablet */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    /* Servicios en 2 columnas para tablet */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md);
+    }
+    
+    /* Cursos en 2 columnas para tablet */
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer en 2 columnas para tablet */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+}
+
+/* Media Queries para móviles pequeños */
+@media (max-width: 480px) {
+    .team-member-full {
+        padding: var(--spacing-sm);
+    }
+    
+    .member-full-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .member-full-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .member-full-role {
+        font-size: 0.75rem;
+    }
+    
+    .member-full-description {
+        font-size: 0.9rem;
+    }
+    
+    .member-social-links a {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -1768,17 +1864,56 @@ section {
         font-size: 1.8rem;
     }
     
+    /* Logo más pequeño en móviles */
+    .logo-design {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .logo-heart {
+        font-size: 16px;
+    }
+    
+    .logo-circle {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .logo-title {
+        font-size: 1rem;
+    }
+    
+    .logo-subtitle {
+        font-size: 0.55rem;
+    }
+    
+    /* Hero ajustado para móviles pequeños */
     .hero {
         min-height: 500px;
     }
     
     .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
     }
     
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+    
+    /* Botones más compactos */
     .btn {
-        padding: 14px 24px;
+        padding: 12px 20px;
         font-size: 0.9rem;
+    }
+    
+    /* Espaciado reducido en secciones */
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
     }
     
     .benefits-grid,
