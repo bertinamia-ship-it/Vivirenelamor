@@ -181,6 +181,11 @@ const translations = {
         therapiesHeroTitle: "Terapias Online",
         therapiesHeroSubtitle: "Sanación profunda desde la comodidad de tu hogar a través de videoconferencia",
         
+        // TERAPIAS-PAREJA.HTML
+        therapiesCouplePageTitle: "Terapias de Pareja | Vivir en el Amor",
+        therapiesCoupleHeroTitle: "Terapias de Pareja",
+        therapiesCoupleHeroSubtitle: "Fortalece tu relación y reconecta emocionalmente desde cualquier lugar del mundo",
+        
         // Constelación Fluvial
         therapyFluvialTitle: "Constelación Fluvial",
         therapyFluvialDesc1: "La Constelación Fluvial es una terapia sistémica que se hace de manera individual, está basada en las constelaciones familiares y utiliza el agua como vehículo de comunicación con los campos morfogenéticos; se enfoca en romper las lealtades invisibles que tenemos con nuestros ancestros para liberar programas heredados relacionados con la falta de éxito, dificultad en la pareja, falta de prosperidad, enfermedades, abusos, duelos, ansiedad, adicciones, suicidios, infertilidad, etc.",
@@ -614,6 +619,11 @@ const translations = {
         therapiesPageTitle: "Online Therapies | Living in Love",
         therapiesHeroTitle: "Online Therapies",
         therapiesHeroSubtitle: "Deep healing from the comfort of your home through videoconference",
+        
+        // TERAPIAS-PAREJA.HTML
+        therapiesCouplePageTitle: "Couple Therapies | Living in Love",
+        therapiesCoupleHeroTitle: "Couple Therapies",
+        therapiesCoupleHeroSubtitle: "Strengthen your relationship and reconnect emotionally from anywhere in the world",
         
         // Fluvial Constellation
         therapyFluvialTitle: "Fluvial Constellation",
@@ -1329,95 +1339,104 @@ window.addEventListener('load', () => {
     console.log('Carrusel Hero:', heroCarousel ? 'Funcionando' : 'No inicializado');
     console.log('Carrusel Testimonios:', testimonialsCarousel ? 'Funcionando' : 'No inicializado');
     console.log('Idioma actual:', currentLanguage);
-});
-// ===== ANIMACIONES DE SCROLL Y NAVBAR =====
-document.addEventListener('DOMContentLoaded', function() {
+    
+    // ===== ANIMACIONES DE SCROLL Y NAVBAR =====
     // Efecto de scroll para el header
     const header = document.querySelector('.header');
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-    
-    // Animación de secciones al hacer scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-    
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
-    }, observerOptions);
+    }
     
-    // Agregar clase de animación a las secciones
+    // Animación de secciones al hacer scroll (solo si existen)
     const sections = document.querySelectorAll('.benefits, .services, .about, .testimonials, .contact');
-    sections.forEach(section => {
-        section.classList.add('section-animate');
-        sectionObserver.observe(section);
-    });
     
-    // Agregar animación a las cards
+    if (sections.length > 0) {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            section.classList.add('section-animate');
+            sectionObserver.observe(section);
+        });
+    }
+    
+    // Agregar animación a las cards (solo si existen)
     const cards = document.querySelectorAll('.benefit-card, .service-card');
-    cards.forEach((card, index) => {
-        card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add('fade-in');
-    });
+    if (cards.length > 0) {
+        cards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('fade-in');
+        });
+    }
     
     // Navegación activa según scroll
     const navLinks = document.querySelectorAll('.nav-menu a');
     
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
+    if (navLinks.length > 0 && sections.length > 0) {
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
         });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
+    }
     
     // Smooth scroll para los enlaces del menú
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            const href = link.getAttribute('href');
-            if (href.startsWith('#')) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const headerHeight = header.offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Cerrar menú móvil si está abierto
-                    const navMobile = document.getElementById('navMobile');
-                    const hamburger = document.getElementById('hamburger');
-                    if (navMobile.classList.contains('active')) {
-                        navMobile.classList.remove('active');
-                        hamburger.classList.remove('active');
+    if (navLinks.length > 0) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target && header) {
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Cerrar menú móvil si está abierto
+                        const navMobile = document.getElementById('navMobile');
+                        const hamburger = document.getElementById('hamburger');
+                        if (navMobile && hamburger && navMobile.classList.contains('active')) {
+                            navMobile.classList.remove('active');
+                            hamburger.classList.remove('active');
+                        }
                     }
                 }
-            }
+            });
         });
-    });
+    }
     
-    console.log('Animaciones de scroll y navbar activadas');
+    console.log('Sistema de traducción e interacciones inicializados');
 });
