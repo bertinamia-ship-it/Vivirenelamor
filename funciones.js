@@ -176,8 +176,8 @@ const translations = {
         // TESTIMONIOS-VIDEO.HTML
         videoTestimonialsTitle: "Testimonios en Video",
         videoTestimonialsSubtitle: "Conoce las experiencias de transformación de nuestras alumnas",
-        videoTestimonialsSectionTitle: "Historias de Transformación",
-        videoTestimonialsSectionText: "Escucha directamente de nuestras alumnas cómo han transformado sus vidas a través del amor consciente",
+        videoSectionTitle: "Historias de Transformación",
+        videoSectionSubtitle: "Escucha directamente de nuestras alumnas cómo han cambiado sus vidas",
         videoTestimonialsCTA: "¿Lista para comenzar tu propia transformación?",
         videoTestimonialsButton: "Agenda tu sesión gratuita",
         
@@ -724,8 +724,8 @@ const translations = {
         // TESTIMONIOS-VIDEO.HTML
         videoTestimonialsTitle: "Video Testimonials",
         videoTestimonialsSubtitle: "Discover the transformation experiences of our students",
-        videoTestimonialsSectionTitle: "Transformation Stories",
-        videoTestimonialsSectionText: "Hear directly from our students how they have transformed their lives through conscious love",
+        videoSectionTitle: "Transformation Stories",
+        videoSectionSubtitle: "Hear directly from our students how they have changed their lives",
         videoTestimonialsCTA: "Ready to start your own transformation?",
         videoTestimonialsButton: "Schedule your free session",
         
