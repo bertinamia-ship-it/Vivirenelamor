@@ -1,13 +1,16 @@
 // TRADUCCIONES ADICIONALES PARA CURSOS DE AUTOESTIMA Y COMUNICACIÓN
 // Este archivo extiende el objeto translations en funciones.js
 
-// Agregar al objeto translations.es:
-const traduccionesEspanol = {
+// Esperar a que translations esté disponible
+if (typeof translations !== 'undefined') {
+    // Extender traducciones en español
+    Object.assign(translations.es, {
     // CURSO AUTOESTIMA - SELF-ESTEEM
     courseSelfEsteemTitlePage: "Autoestima y Amor Propio | Vivir en el Amor",
     courseSelfEsteemHeroTitle: "Autoestima y Amor Propio: El Camino hacia tu Mejor Versión",
     courseSelfEsteemHeroSubtitle: "Reconstruye tu confianza, ámate incondicionalmente y crea la vida que mereces desde el amor propio",
     courseSelfEsteemModules: "6 módulos completos",
+    courseSelfEsteemDuration: "4 semanas intensivas",
     courseSelfEsteemAccess: "Acceso de por vida",
     courseSelfEsteemCertificate: "Certificado incluido",
     courseSelfEsteemWorkbook: "Workbook descargable",
@@ -80,10 +83,13 @@ const traduccionesEspanol = {
     
     // CURSO COMUNICACIÓN - COMMUNICATION
     courseCommunicationTitlePage: "Comunicación en Pareja | Vivir en el Amor",
+    courseCommunicationTitle: "Comunicación en Pareja | Vivir en el Amor",
     courseCommunicationHeroTitle: "Comunicación en Pareja: Conexión Profunda a Través de las Palabras",
     courseCommunicationHeroSubtitle: "Domina el arte de la comunicación efectiva y transforma tus relaciones creando conexiones profundas y duraderas",
     courseCommunicationModules: "7 módulos completos",
+    courseCommunicationDuration: "5 semanas de transformación",
     courseCommunicationAccess: "Acceso de por vida",
+    courseCommunicationCommunity: "Grupo de práctica exclusivo",
     courseCommunicationCertificate: "Certificado incluido",
     courseCommunicationSupport: "Soporte directo de Michelle",
     courseCommunicationDescTitle: "Sobre este curso",
@@ -96,6 +102,7 @@ const traduccionesEspanol = {
     courseCommunicationBenefit4: "Transformar conflictos en oportunidades de crecimiento",
     courseCommunicationBenefit5: "Interpretar y usar el lenguaje corporal efectivamente",
     courseCommunicationBenefit6: "Crear rituales de comunicación diaria con tu pareja",
+    courseCommunicationBenefit7: "Crear un plan de comunicación personalizado para tu relación",
     courseCommunicationCurriculumTitle: "Contenido del curso",
     courseCommunicationModule1: "Fundamentos de la Comunicación Efectiva",
     courseCommunicationModule1Duration: "3 lecciones",
@@ -156,15 +163,16 @@ const traduccionesEspanol = {
     courseCommunicationTestimonial2Role: "Terapia de pareja",
     courseCommunicationTestimonial3: "\"La comunicación no violenta transformó nuestras discusiones en conversaciones productivas. Gracias Michelle.\"",
     courseCommunicationTestimonial3Role: "Coaching de comunicación"
-};
+    });
 
-// Agregar al objeto translations.en:
-const traduccionesIngles = {
+    // Extender traducciones en inglés
+    Object.assign(translations.en, {
     // CURSO AUTOESTIMA - SELF-ESTEEM
     courseSelfEsteemTitlePage: "Self-Esteem and Self-Love | Living in Love",
     courseSelfEsteemHeroTitle: "Self-Esteem and Self-Love: The Path to Your Best Version",
     courseSelfEsteemHeroSubtitle: "Rebuild your confidence, love yourself unconditionally, and create the life you deserve from self-love",
     courseSelfEsteemModules: "6 complete modules",
+    courseSelfEsteemDuration: "4 intensive weeks",
     courseSelfEsteemAccess: "Lifetime access",
     courseSelfEsteemCertificate: "Certificate included",
     courseSelfEsteemWorkbook: "Downloadable workbook",
@@ -237,10 +245,13 @@ const traduccionesIngles = {
     
     // CURSO COMUNICACIÓN - COMMUNICATION
     courseCommunicationTitlePage: "Couple Communication | Living in Love",
+    courseCommunicationTitle: "Couple Communication | Living in Love",
     courseCommunicationHeroTitle: "Couple Communication: Deep Connection Through Words",
     courseCommunicationHeroSubtitle: "Master the art of effective communication and transform your relationships creating deep and lasting connections",
     courseCommunicationModules: "7 complete modules",
+    courseCommunicationDuration: "5 weeks of transformation",
     courseCommunicationAccess: "Lifetime access",
+    courseCommunicationCommunity: "Exclusive practice group",
     courseCommunicationCertificate: "Certificate included",
     courseCommunicationSupport: "Direct support from Michelle",
     courseCommunicationDescTitle: "About this course",
@@ -253,6 +264,7 @@ const traduccionesIngles = {
     courseCommunicationBenefit4: "Transform conflicts into growth opportunities",
     courseCommunicationBenefit5: "Interpret and use body language effectively",
     courseCommunicationBenefit6: "Create daily communication rituals with your partner",
+    courseCommunicationBenefit7: "Create a personalized communication plan for your relationship",
     courseCommunicationCurriculumTitle: "Course content",
     courseCommunicationModule1: "Foundations of Effective Communication",
     courseCommunicationModule1Duration: "3 lessons",
@@ -313,9 +325,9 @@ const traduccionesIngles = {
     courseCommunicationTestimonial2Role: "Couple therapy",
     courseCommunicationTestimonial3: "\"Nonviolent communication transformed our arguments into productive conversations. Thank you Michelle.\"",
     courseCommunicationTestimonial3Role: "Communication coaching"
-};
-
-// INSTRUCCIONES PARA INCORPORAR:
-// 1. Copiar el contenido de traduccionesEspanol al objeto translations.es en funciones.js
-// 2. Copiar el contenido de traduccionesIngles al objeto translations.en en funciones.js
-// 3. O importar este archivo y extender el objeto translations
+    });
+    
+    console.log('Traducciones de cursos extendidas correctamente');
+} else {
+    console.error('El objeto translations no está disponible');
+}
