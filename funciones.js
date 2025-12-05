@@ -1356,17 +1356,21 @@ function toggleMobileMenu() {
 
 // Función para scroll suave
 function smoothScroll(e) {
-    e.preventDefault();
-    
     const targetId = this.getAttribute('href');
-    if (!targetId.startsWith('#')) return;
+    
+    // Solo aplicar smooth scroll si es un enlace interno (#)
+    if (!targetId || !targetId.startsWith('#')) {
+        return; // Dejar que el navegador maneje enlaces externos normalmente
+    }
+    
+    e.preventDefault();
     
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
         // Cerrar menú móvil si está abierto
         const mobileNav = document.getElementById('navMobile');
         const hamburger = document.getElementById('hamburger');
-        if (mobileNav.classList.contains('active')) {
+        if (mobileNav && hamburger && mobileNav.classList.contains('active')) {
             mobileNav.classList.remove('active');
             hamburger.classList.remove('active');
             document.body.style.overflow = 'auto';
