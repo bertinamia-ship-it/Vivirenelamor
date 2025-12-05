@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navegación -->
-    <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="nav-wrapper">
+            <div class="header-content">
                 <a href="index.html#inicio" class="logo">
                     <div class="logo-design">
                         <i class="fas fa-heart logo-heart"></i>
@@ -26,48 +26,75 @@
                 
                 <!-- Menú Desktop -->
                 <nav class="nav-menu">
-                    <a href="index.html#beneficios" data-i18n="navBenefits">Beneficios</a>
-                    <a href="index.html#servicios" data-i18n="navServices">Servicios</a>
-                    <a href="equipo-trabajo.html" data-i18n="navTeam">Equipo</a>
-                    <a href="index.html#testimonios" data-i18n="navTestimonials">Testimonios</a>
-                    <a href="index.html#sobre-mi" data-i18n="navAbout">Sobre mí</a>
-                    <a href="index.html#contacto" data-i18n="navContact">Contacto</a>
+                    <ul>
+                        <li><a href="index.html#beneficios" data-i18n="menuBenefits">Beneficios</a></li>
+                        <li><a href="index.html#servicios" data-i18n="menuServices">Servicios</a></li>
+                        <li><a href="equipo-trabajo.html" data-i18n="menuTeam">Equipo</a></li>
+                        <li><a href="index.html#testimonios" data-i18n="menuTestimonials">Testimonios</a></li>
+                        <li><a href="index.html#sobre-mi" data-i18n="menuAbout">Sobre mí</a></li>
+                        <li><a href="index.html#contacto" data-i18n="menuContact">Contacto</a></li>
+                    </ul>
                 </nav>
                 
-                <!-- Botones de idioma Desktop -->
-                <div class="lang-buttons">
-                    <button class="lang-btn active-lang" data-lang="es">ES</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                <!-- Selector de idioma -->
+                <div class="language-switcher">
+                    <button class="lang-btn active-lang" data-lang="es">
+                        <span>ES</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span>EN</span>
+                    </button>
                 </div>
                 
-                <!-- Menú Hamburguesa -->
-                <button class="hamburger" id="hamburger" aria-label="Menú">
+                <!-- Botón hamburguesa móvil -->
+                <button class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-        </div>
-        
-        <!-- Menú Móvil -->
-        <div class="nav-mobile" id="navMobile">
-            <a href="index.html#beneficios" class="nav-link-mobile" data-i18n="navBenefits">Beneficios</a>
-            <a href="index.html#servicios" class="nav-link-mobile" data-i18n="navServices">Servicios</a>
-            <a href="equipo-trabajo.html" class="nav-link-mobile" data-i18n="navTeam">Equipo</a>
-            <a href="index.html#testimonios" class="nav-link-mobile" data-i18n="navTestimonials">Testimonios</a>
-            <a href="index.html#sobre-mi" class="nav-link-mobile" data-i18n="navAbout">Sobre mí</a>
-            <a href="index.html#contacto" class="nav-link-mobile" data-i18n="navContact">Contacto</a>
             
-            <!-- Botones de idioma móvil -->
-            <div class="lang-buttons-mobile">
-                <button class="lang-btn active-lang" data-lang="es">ES</button>
-                <button class="lang-btn" data-lang="en">EN</button>
-            </div>
+            <!-- Menú móvil -->
+            <nav class="nav-mobile" id="navMobile">
+                <ul>
+                    <li><a href="index.html#beneficios" data-i18n="menuBenefits" class="nav-link-mobile">
+                        <i class="fas fa-star"></i>
+                        <span>Beneficios</span>
+                    </a></li>
+                    <li><a href="index.html#servicios" data-i18n="menuServices" class="nav-link-mobile">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Servicios</span>
+                    </a></li>
+                    <li><a href="equipo-trabajo.html" data-i18n="menuTeam" class="nav-link-mobile">
+                        <i class="fas fa-users"></i>
+                        <span>Equipo</span>
+                    </a></li>
+                    <li><a href="index.html#testimonios" data-i18n="menuTestimonials" class="nav-link-mobile">
+                        <i class="fas fa-comments"></i>
+                        <span>Testimonios</span>
+                    </a></li>
+                    <li><a href="index.html#sobre-mi" data-i18n="menuAbout" class="nav-link-mobile">
+                        <i class="fas fa-heart"></i>
+                        <span>Sobre mí</span>
+                    </a></li>
+                    <li><a href="index.html#contacto" data-i18n="menuContact" class="nav-link-mobile">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contacto</span>
+                    </a></li>
+                </ul>
+                
+                <!-- Selector de idioma móvil -->
+                <div class="language-switcher-mobile">
+                    <button class="lang-btn active-lang" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(197, 122, 163, 0.85), rgba(237, 174, 192, 0.85)), url('vivirenelamor.jpg');">
         <div class="hero-content">
             <h1 data-i18n="videoTestimonialsTitle">Testimonios en Video</h1>
             <p data-i18n="videoTestimonialsSubtitle">Conoce las experiencias de transformación de nuestras alumnas</p>
