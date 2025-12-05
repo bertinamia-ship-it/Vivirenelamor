@@ -3931,8 +3931,11 @@ section {
    ============================================== */
 
 .therapies-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 50vh;
+    position: relative;
 }
 
 .therapies-section {
