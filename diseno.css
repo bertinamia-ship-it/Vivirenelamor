@@ -4709,27 +4709,6 @@ section {
    VIDEO TESTIMONIALS PAGE
    ============================================= */
 
-/* Video Hero Section */
-.video-hero {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    padding: 160px 0 80px;
-    text-align: center;
-    color: white;
-}
-
-.video-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-.video-hero p {
-    font-size: 1.25rem;
-    opacity: 0.95;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
 /* Videos Section */
 .videos-section {
     padding: 80px 0;
@@ -4738,18 +4717,19 @@ section {
 
 .videos-container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .video-item {
     background: white;
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .video-item:hover {
@@ -4759,28 +4739,55 @@ section {
 
 .video-item h3 {
     margin-top: 20px;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
     color: var(--color-primary);
-    text-align: center;
 }
 
-/* Responsive Video Container */
-.video-responsive {
+.video-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Video Thumbnail */
+.video-thumbnail {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+    display: block;
     border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     background: #000;
 }
 
-.video-responsive iframe {
+.video-thumbnail img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.video-thumbnail:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.2);
+    color: var(--color-secondary);
 }
 
 /* CTA Section */
