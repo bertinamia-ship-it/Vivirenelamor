@@ -108,6 +108,7 @@ const translations = {
         // Testimonios section - 8 testimonios
         testimonialsTitle: "Historias de transformación",
         testimonialsSubtitle: "Lo que dicen quienes han recorrido este camino",
+        watchVideoTestimonials: "Ver Testimonios en Video",
         testimonial1Text: "\"Después de años en relaciones tóxicas, finalmente encontré el camino hacia el amor sano. Michelle me guió con paciencia y sabiduría.\"",
         testimonial1Name: "Ana G.",
         testimonial1Role: "Terapia individual",
@@ -171,6 +172,14 @@ const translations = {
         footerPrivacy: "Política de privacidad",
         privacyPolicy: "Política de privacidad",
         termsConditions: "Términos y condiciones",
+        
+        // TESTIMONIOS-VIDEO.HTML
+        videoTestimonialsTitle: "Testimonios en Video",
+        videoTestimonialsSubtitle: "Conoce las experiencias de transformación de nuestras alumnas",
+        videoTestimonialsSectionTitle: "Historias de Transformación",
+        videoTestimonialsSectionText: "Escucha directamente de nuestras alumnas cómo han transformado sus vidas a través del amor consciente",
+        videoTestimonialsCTA: "¿Lista para comenzar tu propia transformación?",
+        videoTestimonialsButton: "Agenda tu sesión gratuita",
         
         // CURSOS-ONLINE.HTML
         menuCourses: "Cursos",
@@ -647,6 +656,7 @@ const translations = {
         // Testimonios section - 8 testimonios
         testimonialsTitle: "Transformation stories",
         testimonialsSubtitle: "What those who have walked this path say",
+        watchVideoTestimonials: "Watch Video Testimonials",
         testimonial1Text: "\"After years in toxic relationships, I finally found the path to healthy love. Michelle guided me with patience and wisdom.\"",
         testimonial1Name: "Ana G.",
         testimonial1Role: "Individual therapy",
@@ -694,8 +704,6 @@ const translations = {
         
         // Footer
         footerTagline: "Healing hearts, transforming relationships",
-        // Footer
-        footerTagline: "Healing hearts, transforming relationships",
         footerLinksTitle: "Links",
         footerContactTitle: "Contact",
         footerFollowTitle: "Follow us",
@@ -710,6 +718,17 @@ const translations = {
         footerHome: "Home",
         footerContact: "Contact",
         footerPrivacy: "Privacy Policy",
+        privacyPolicy: "Privacy policy",
+        termsConditions: "Terms and conditions",
+        
+        // TESTIMONIOS-VIDEO.HTML
+        videoTestimonialsTitle: "Video Testimonials",
+        videoTestimonialsSubtitle: "Discover the transformation experiences of our students",
+        videoTestimonialsSectionTitle: "Transformation Stories",
+        videoTestimonialsSectionText: "Hear directly from our students how they have transformed their lives through conscious love",
+        videoTestimonialsCTA: "Ready to start your own transformation?",
+        videoTestimonialsButton: "Schedule your free session",
+        
         privacyPolicy: "Privacy policy",
         termsConditions: "Terms and conditions",
         
