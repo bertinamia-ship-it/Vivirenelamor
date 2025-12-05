@@ -175,7 +175,7 @@ const translations = {
         
         // TESTIMONIOS-VIDEO.HTML
         videoTestimonialsTitle: "Testimonios en Video",
-        videoTestimonialsSubtitle: "Conoce las experiencias de transformación de nuestras alumnas",
+        videoTestimonialsSubtitle: "Descubre historias reales de mujeres que transformaron sus vidas y encontraron el amor verdadero",
         videoSectionTitle: "Historias de Transformación",
         videoSectionSubtitle: "Escucha directamente de nuestras alumnas cómo han cambiado sus vidas",
         videoTestimonialsCTA: "¿Lista para comenzar tu propia transformación?",
@@ -723,7 +723,7 @@ const translations = {
         
         // TESTIMONIOS-VIDEO.HTML
         videoTestimonialsTitle: "Video Testimonials",
-        videoTestimonialsSubtitle: "Discover the transformation experiences of our students",
+        videoTestimonialsSubtitle: "Discover real stories of women who transformed their lives and found true love",
         videoSectionTitle: "Transformation Stories",
         videoSectionSubtitle: "Hear directly from our students how they have changed their lives",
         videoTestimonialsCTA: "Ready to start your own transformation?",

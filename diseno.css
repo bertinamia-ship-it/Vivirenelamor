@@ -4709,6 +4709,79 @@ section {
    VIDEO TESTIMONIALS PAGE
    ============================================= */
 
+/* Video Hero Section - Mejorado */
+.videos-section ~ .hero,
+section.hero[style*="vivirenelamor"] {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.videos-section ~ .hero .hero-content,
+section.hero[style*="vivirenelamor"] .hero-content {
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeInScale 1s ease-out;
+}
+
+.videos-section ~ .hero h1,
+section.hero[style*="vivirenelamor"] h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.5),
+        0 5px 25px rgba(231, 111, 145, 0.5),
+        0 0 40px rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    animation: slideInDown 0.8s ease-out;
+}
+
+.videos-section ~ .hero p,
+section.hero[style*="vivirenelamor"] p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.6),
+        0 4px 16px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Videos Section */
 .videos-section {
     padding: var(--spacing-xxl) 0;
