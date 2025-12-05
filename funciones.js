@@ -199,6 +199,10 @@ const translations = {
         courseAbandonmentFeature2: "6 semanas de duración",
         courseAbandonmentFeature3: "Certificado incluido",
         courseAbandonmentButton: "Lo quiero",
+        courseAbandonmentBadge: "Popular",
+        courseAbandonmentModulesShort: "8 módulos en video",
+        courseAbandonmentDurationShort: "Acceso de por vida",
+        courseAbandonmentCertificateShort: "Material descargable",
         
         // Curso 2 - Amor Consciente
         courseConscientLoveTitle: "Amor Consciente",
@@ -207,6 +211,10 @@ const translations = {
         courseConscientLoveFeature2: "8 semanas de duración",
         courseConscientLoveFeature3: "Comunidad privada",
         courseConscientLoveButton: "Lo quiero",
+        courseConscientLoveBadge: "Destacado",
+        courseConscientLoveModulesShort: "Curso completo",
+        courseConscientLoveDurationShort: "Acceso de por vida",
+        courseConscientLoveCommunityShort: "Ejercicios prácticos",
         
         // Curso 3 - Autoestima
         courseSelfEsteemTitle: "Autoestima y Amor Propio",
@@ -215,6 +223,10 @@ const translations = {
         courseSelfEsteemFeature2: "4 semanas de duración",
         courseSelfEsteemFeature3: "Workbook incluido",
         courseSelfEsteemButton: "Lo quiero",
+        courseSelfEsteemBadge: "Nuevo",
+        courseSelfEsteemModulesShort: "6 módulos",
+        courseSelfEsteemDurationShort: "Acceso de por vida",
+        courseSelfEsteemWorkbookShort: "Workbook incluido",
         
         // Curso 4 - Comunicación
         courseCommunicationTitle: "Comunicación en Pareja",
@@ -224,15 +236,15 @@ const translations = {
         courseCommunicationFeature3: "Soporte directo",
         courseCommunicationButton: "Lo quiero",
         courseCommunicationModulesShort: "7 módulos",
-        courseCommunicationDurationShort: "5 semanas",
-        courseCommunicationSupportShort: "Soporte directo",
+        courseCommunicationDurationShort: "Acceso de por vida",
+        courseCommunicationSupportShort: "Ejercicios prácticos",
         
         // Curso 5 - Supera la Infidelidad
         courseInfidelityTitle: "Supera la Infidelidad",
         courseInfidelityDesc: "Sana las heridas de la infidelidad y reconstruye la confianza en ti misma y en tu relación",
         courseInfidelityBadge: "Especializado",
-        courseInfidelityModulesShort: "5 módulos intensivos",
-        courseInfidelityDurationShort: "4 semanas",
+        courseInfidelityModulesShort: "Curso completo en video",
+        courseInfidelityDurationShort: "Acceso de por vida",
         courseInfidelitySupportShort: "Guías de sanación",
         coursePriceLabel: "Precio:",
         
@@ -762,6 +774,10 @@ const translations = {
         courseAbandonmentFeature2: "6-week duration",
         courseAbandonmentFeature3: "Certificate included",
         courseAbandonmentButton: "I want it",
+        courseAbandonmentBadge: "Popular",
+        courseAbandonmentModulesShort: "8 video modules",
+        courseAbandonmentDurationShort: "Lifetime access",
+        courseAbandonmentCertificateShort: "Downloadable materials",
         
         // Course 2 - Conscious Love
         courseConscientLoveTitle: "Conscious Love",
@@ -770,6 +786,10 @@ const translations = {
         courseConscientLoveFeature2: "8-week duration",
         courseConscientLoveFeature3: "Private community",
         courseConscientLoveButton: "I want it",
+        courseConscientLoveBadge: "Featured",
+        courseConscientLoveModulesShort: "Complete course",
+        courseConscientLoveDurationShort: "Lifetime access",
+        courseConscientLoveCommunityShort: "Practical exercises",
         
         // Course 3 - Self-esteem
         courseSelfEsteemTitle: "Self-Esteem and Self-Love",
@@ -778,6 +798,10 @@ const translations = {
         courseSelfEsteemFeature2: "4-week duration",
         courseSelfEsteemFeature3: "Workbook included",
         courseSelfEsteemButton: "I want it",
+        courseSelfEsteemBadge: "New",
+        courseSelfEsteemModulesShort: "6 modules",
+        courseSelfEsteemDurationShort: "Lifetime access",
+        courseSelfEsteemWorkbookShort: "Workbook included",
         
         // Course 4 - Communication
         courseCommunicationTitle: "Couple Communication",
@@ -787,15 +811,15 @@ const translations = {
         courseCommunicationFeature3: "Direct support",
         courseCommunicationButton: "I want it",
         courseCommunicationModulesShort: "7 modules",
-        courseCommunicationDurationShort: "5 weeks",
-        courseCommunicationSupportShort: "Direct support",
+        courseCommunicationDurationShort: "Lifetime access",
+        courseCommunicationSupportShort: "Practical exercises",
         
         // Course 5 - Overcoming Infidelity
         courseInfidelityTitle: "Overcome Infidelity",
         courseInfidelityDesc: "Heal the wounds of infidelity and rebuild trust in yourself and your relationship",
         courseInfidelityBadge: "Specialized",
-        courseInfidelityModulesShort: "5 intensive modules",
-        courseInfidelityDurationShort: "4 weeks",
+        courseInfidelityModulesShort: "Complete video course",
+        courseInfidelityDurationShort: "Lifetime access",
         courseInfidelitySupportShort: "Healing guides",
         coursePriceLabel: "Price:",
         
